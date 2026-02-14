@@ -1,0 +1,2444 @@
+/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py:85: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:281.)
+  states = torch.Tensor(batch.state)
+('lagrange multiplier:', tensor(1.3823), 'grad_norm:', tensor(0.1700))
+fval before 1.4210854715202004e-17
+a/e/r 0.026475178335494214 0.027645002092153887 0.9576840778394555
+fval after -0.0264751783354942
+/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py:228: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  iteration, float(reward_batch)))
+Episode 1	Average reward -709.44
+('lagrange multiplier:', tensor(1.5312), 'grad_norm:', tensor(0.2040))
+fval before -4.440892098500626e-19
+a/e/r 0.030840588433834904 0.030624737829841472 1.0070482433251429
+fval after -0.030840588433834904
+Episode 2	Average reward -742.47
+('lagrange multiplier:', tensor(1.4818), 'grad_norm:', tensor(0.1841))
+fval before 1.3026616822268503e-17
+a/e/r 0.030246982442268228 0.02963694107340201 1.0205838169113108
+fval after -0.030246982442268214
+Episode 3	Average reward -651.00
+('lagrange multiplier:', tensor(1.6468), 'grad_norm:', tensor(0.2221))
+fval before -7.105427357601002e-18
+a/e/r 0.03289882558013516 0.03293648405121129 0.9988566335429861
+fval after -0.03289882558013517
+Episode 4	Average reward -671.54
+('lagrange multiplier:', tensor(1.6037), 'grad_norm:', tensor(0.2156))
+fval before -1.7171449447535755e-17
+a/e/r 0.03198904602517993 0.032074741590082424 0.9973282539264792
+fval after -0.03198904602517994
+Episode 5	Average reward -638.42
+('lagrange multiplier:', tensor(1.5879), 'grad_norm:', tensor(0.2163))
+fval before -2.3092638912203255e-17
+a/e/r 0.0319448409220504 0.03175728146111074 1.0059060301231812
+fval after -0.031944840922050424
+Episode 6	Average reward -653.02
+('lagrange multiplier:', tensor(1.7070), 'grad_norm:', tensor(0.2209))
+fval before -1.7171449447535755e-17
+a/e/r 0.03431389429720304 0.03413990487097198 1.0050963652912517
+fval after -0.03431389429720305
+Episode 7	Average reward -522.97
+('lagrange multiplier:', tensor(1.7464), 'grad_norm:', tensor(0.2462))
+fval before -7.105427357601002e-18
+a/e/r 0.03502890800409384 0.03492864483181645 1.0028705142372447
+fval after -0.03502890800409385
+Episode 8	Average reward -596.29
+('lagrange multiplier:', tensor(1.8080), 'grad_norm:', tensor(0.2317))
+fval before 1.1842378929335004e-17
+a/e/r 0.03855380262889437 0.03615930507559458 1.0662207846166805
+fval after -0.03855380262889436
+Episode 9	Average reward -516.97
+('lagrange multiplier:', tensor(1.7406), 'grad_norm:', tensor(0.2388))
+fval before 1.5987211554602253e-17
+a/e/r 0.03548877616183859 0.03481112934170452 1.0194663842555154
+fval after -0.03548877616183858
+Episode 10	Average reward -576.76
+('lagrange multiplier:', tensor(1.8123), 'grad_norm:', tensor(0.2366))
+fval before -2.9605947323337507e-19
+a/e/r 0.038382004550401284 0.036246327138367875 1.0589212088684354
+fval after -0.038382004550401284
+Episode 11	Average reward -553.03
+('lagrange multiplier:', tensor(1.6523), 'grad_norm:', tensor(0.2177))
+fval before 1.0362081563168128e-17
+a/e/r 0.034185244325908325 0.0330465820912273 1.034456278459832
+fval after -0.03418524432590832
+Episode 12	Average reward -533.93
+('lagrange multiplier:', tensor(1.7743), 'grad_norm:', tensor(0.2318))
+fval before 2.1316282072803006e-17
+a/e/r 0.037212342755566334 0.035486610931375576 1.0486305053905542
+fval after -0.03721234275556631
+Episode 13	Average reward -568.04
+('lagrange multiplier:', tensor(1.9172), 'grad_norm:', tensor(0.2418))
+fval before -1.2434497875801754e-17
+a/e/r 0.038917292817902134 0.03834403549192921 1.01495036499467
+fval after -0.03891729281790215
+Episode 14	Average reward -483.59
+('lagrange multiplier:', tensor(2.0053), 'grad_norm:', tensor(0.2944))
+fval before 0.0
+a/e/r 0.0413720140495554 0.04010654055987539 1.031552795928404
+fval after -0.0413720140495554
+Episode 15	Average reward -553.83
+('lagrange multiplier:', tensor(1.7526), 'grad_norm:', tensor(0.2429))
+fval before 8.289665250534503e-18
+a/e/r 0.03562382692433221 0.03505223034689682 1.016306995925182
+fval after -0.035623826924332205
+Episode 16	Average reward -514.13
+('lagrange multiplier:', tensor(1.8770), 'grad_norm:', tensor(0.2635))
+fval before 5.921189464667502e-18
+a/e/r 0.03785679328515978 0.03754012385566355 1.0084354924004455
+fval after -0.03785679328515977
+Episode 17	Average reward -496.11
+('lagrange multiplier:', tensor(1.9176), 'grad_norm:', tensor(0.2691))
+fval before -7.105427357601002e-18
+a/e/r 0.03792800802367214 0.03835171687697792 0.9889520238516328
+fval after -0.03792800802367215
+Episode 18	Average reward -474.15
+('lagrange multiplier:', tensor(1.7948), 'grad_norm:', tensor(0.2396))
+fval before 1.7763568394002505e-18
+a/e/r 0.03604138312716775 0.03589625671568372 1.004042939982113
+fval after -0.03604138312716775
+Episode 19	Average reward -499.02
+('lagrange multiplier:', tensor(2.0627), 'grad_norm:', tensor(0.2775))
+fval before -7.105427357601002e-18
+a/e/r 0.04327217053908562 0.04125340256219827 1.0489357932074483
+fval after -0.04327217053908563
+Episode 20	Average reward -443.27
+('lagrange multiplier:', tensor(1.9635), 'grad_norm:', tensor(0.2908))
+fval before 7.993605777301126e-18
+a/e/r 0.03930197768831041 0.03927036017982644 1.0008051239749058
+fval after -0.039301977688310404
+Episode 21	Average reward -420.28
+('lagrange multiplier:', tensor(1.9537), 'grad_norm:', tensor(0.2731))
+fval before -1.1842378929335004e-17
+a/e/r 0.039351085221369514 0.03907328134147053 1.0071098169992736
+fval after -0.03935108522136953
+Episode 22	Average reward -444.57
+('lagrange multiplier:', tensor(2.1719), 'grad_norm:', tensor(0.3123))
+fval before 2.842170943040401e-17
+a/e/r 0.04497131098139606 0.043438482126327914 1.0352873484531613
+fval after -0.044971310981396034
+Episode 23	Average reward -444.71
+('lagrange multiplier:', tensor(1.9277), 'grad_norm:', tensor(0.2740))
+fval before 1.2434497875801754e-17
+a/e/r 0.03996520775164453 0.03855402385157743 1.0366027656542354
+fval after -0.03996520775164451
+Episode 24	Average reward -463.53
+('lagrange multiplier:', tensor(2.0450), 'grad_norm:', tensor(0.2756))
+fval before -1.7171449447535755e-17
+a/e/r 0.04122827940541059 0.040899826047621775 1.008030678600109
+fval after -0.0412282794054106
+Episode 25	Average reward -474.55
+('lagrange multiplier:', tensor(2.0025), 'grad_norm:', tensor(0.2702))
+fval before -1.1842378929335003e-18
+a/e/r 0.040785160171987564 0.040049765201061134 1.0183620295208857
+fval after -0.040785160171987564
+Episode 26	Average reward -486.73
+('lagrange multiplier:', tensor(1.7974), 'grad_norm:', tensor(0.2362))
+fval before 3.552713678800501e-18
+a/e/r 0.03688194737583957 0.03594766663363512 1.0259900246579643
+fval after -0.036881947375839566
+Episode 27	Average reward -384.73
+('lagrange multiplier:', tensor(1.9430), 'grad_norm:', tensor(0.2857))
+fval before 5.95079541199084e-17
+a/e/r 0.04100479504420268 0.03885950438990814 1.055206330805693
+fval after -0.04100479504420262
+Episode 28	Average reward -439.90
+('lagrange multiplier:', tensor(1.9647), 'grad_norm:', tensor(0.2617))
+fval before 1.1842378929335004e-17
+a/e/r 0.04066099823655207 0.039293057786967775 1.0348137947675327
+fval after -0.04066099823655206
+Episode 29	Average reward -440.67
+('lagrange multiplier:', tensor(2.0251), 'grad_norm:', tensor(0.2841))
+fval before -5.921189464667502e-18
+a/e/r 0.04073170701322834 0.04050225229419039 1.0056652335621066
+fval after -0.04073170701322835
+Episode 30	Average reward -392.79
+('lagrange multiplier:', tensor(2.0187), 'grad_norm:', tensor(0.2809))
+fval before -1.0066022089934753e-17
+a/e/r 0.04168099121587195 0.04037417410108901 1.032367649465991
+fval after -0.04168099121587196
+Episode 31	Average reward -395.50
+('lagrange multiplier:', tensor(2.0680), 'grad_norm:', tensor(0.2896))
+fval before -1.3026616822268503e-17
+a/e/r 0.04118004253454217 0.041359089730961314 0.9956709106127858
+fval after -0.04118004253454218
+Episode 32	Average reward -404.68
+('lagrange multiplier:', tensor(2.1123), 'grad_norm:', tensor(0.3119))
+fval before 2.3684757858670005e-18
+a/e/r 0.043797572844923666 0.042246051336504865 1.0367258349439663
+fval after -0.043797572844923666
+Episode 33	Average reward -378.32
+('lagrange multiplier:', tensor(2.0337), 'grad_norm:', tensor(0.2936))
+fval before -1.3026616822268503e-17
+a/e/r 0.041224579143106725 0.040674550869313916 1.0135226637304497
+fval after -0.04122457914310674
+Episode 34	Average reward -385.04
+('lagrange multiplier:', tensor(2.0740), 'grad_norm:', tensor(0.2849))
+fval before 7.105427357601002e-18
+a/e/r 0.043465685519074905 0.04147914270390651 1.0478925716799181
+fval after -0.0434656855190749
+Episode 35	Average reward -367.93
+('lagrange multiplier:', tensor(2.1266), 'grad_norm:', tensor(0.3207))
+fval before -8.141635513917815e-18
+a/e/r 0.0439975903016363 0.04253284765657534 1.0344379162403559
+fval after -0.04399759030163631
+Episode 36	Average reward -400.85
+('lagrange multiplier:', tensor(2.0066), 'grad_norm:', tensor(0.3070))
+fval before -4.736951571734001e-18
+a/e/r 0.04212035409779201 0.04013258440401366 1.0495300694759033
+fval after -0.042120354097792016
+Episode 37	Average reward -328.24
+('lagrange multiplier:', tensor(2.0740), 'grad_norm:', tensor(0.2948))
+fval before -2.4868995751603507e-17
+a/e/r 0.042083324537315205 0.041480568784629135 1.0145310387573427
+fval after -0.04208332453731523
+Episode 38	Average reward -377.05
+('lagrange multiplier:', tensor(2.2418), 'grad_norm:', tensor(0.3163))
+fval before 1.5987211554602253e-17
+a/e/r 0.04774276663585095 0.04483655121686521 1.0648179964807947
+fval after -0.04774276663585093
+Episode 39	Average reward -317.46
+('lagrange multiplier:', tensor(2.1554), 'grad_norm:', tensor(0.2900))
+fval before 7.105427357601002e-18
+a/e/r 0.04876154499466085 0.043107793230355095 1.1311538202406652
+fval after -0.048761544994660844
+Episode 40	Average reward -316.99
+('lagrange multiplier:', tensor(1.9926), 'grad_norm:', tensor(0.2631))
+fval before 1.0658141036401503e-17
+a/e/r 0.04106061219067917 0.03985177408524014 1.0303333573770996
+fval after -0.041060612190679156
+Episode 41	Average reward -373.87
+('lagrange multiplier:', tensor(2.2797), 'grad_norm:', tensor(0.3236))
+fval before -1.687538997430238e-17
+a/e/r 0.04648817090183199 0.045594158055615036 1.0196080569165562
+fval after -0.04648817090183201
+Episode 42	Average reward -316.44
+('lagrange multiplier:', tensor(2.1654), 'grad_norm:', tensor(0.3098))
+fval before -3.315866100213801e-17
+a/e/r 0.04441221851123505 0.04330787232267261 1.0254998948074459
+fval after -0.044412218511235085
+Episode 43	Average reward -457.29
+('lagrange multiplier:', tensor(2.3879), 'grad_norm:', tensor(0.3360))
+fval before -2.3684757858670008e-17
+a/e/r 0.05049122107665111 0.04775835645531874 1.057222752711123
+fval after -0.05049122107665113
+Episode 44	Average reward -343.46
+('lagrange multiplier:', tensor(2.2139), 'grad_norm:', tensor(0.3122))
+fval before 1.1250259982868253e-17
+a/e/r 0.042515008687368495 0.04427706701479823 0.9602038155137779
+fval after -0.04251500868736848
+Episode 45	Average reward -337.80
+('lagrange multiplier:', tensor(2.2336), 'grad_norm:', tensor(0.3478))
+fval before -1.3618735768735253e-17
+a/e/r 0.045591776672841915 0.04467161914702284 1.020598257761615
+fval after -0.04559177667284193
+Episode 46	Average reward -286.71
+('lagrange multiplier:', tensor(2.2408), 'grad_norm:', tensor(0.3554))
+fval before 1.2138438402568379e-17
+a/e/r 0.046770795522307305 0.04481699055444533 1.0435951844086546
+fval after -0.04677079552230729
+Episode 47	Average reward -297.52
+('lagrange multiplier:', tensor(2.2084), 'grad_norm:', tensor(0.3448))
+fval before -9.473903143468002e-18
+a/e/r 0.04614306228351629 0.04416852066179533 1.0447047261745601
+fval after -0.0461430622835163
+Episode 48	Average reward -282.52
+('lagrange multiplier:', tensor(2.1646), 'grad_norm:', tensor(0.3057))
+fval before 1.5395092608135503e-17
+a/e/r 0.04341033041671051 0.04329243161098528 1.0027233121665384
+fval after -0.043410330416710496
+Episode 49	Average reward -282.54
+('lagrange multiplier:', tensor(2.3684), 'grad_norm:', tensor(0.3327))
+fval before 1.0362081563168128e-17
+a/e/r 0.048588938411125326 0.047368612357355344 1.025762334867732
+fval after -0.04858893841112532
+Episode 50	Average reward -278.33
+('lagrange multiplier:', tensor(2.3659), 'grad_norm:', tensor(0.3550))
+fval before -1.1102230246251566e-17
+a/e/r 0.048490553421197284 0.047318360365832174 1.0247724783002314
+fval after -0.0484905534211973
+Episode 51	Average reward -286.40
+('lagrange multiplier:', tensor(2.4831), 'grad_norm:', tensor(0.3723))
+fval before 3.848773152033876e-18
+a/e/r 0.052649685269403 0.04966241851169584 1.060151455511649
+fval after -0.052649685269402995
+Episode 52	Average reward -232.83
+('lagrange multiplier:', tensor(2.2859), 'grad_norm:', tensor(0.3212))
+fval before 1.3322676295501879e-18
+a/e/r 0.04442348770514402 0.04571810302109769 0.9716826545634178
+fval after -0.04442348770514402
+Episode 53	Average reward -211.91
+('lagrange multiplier:', tensor(2.4846), 'grad_norm:', tensor(0.3684))
+fval before -2.3684757858670005e-18
+a/e/r 0.05223904138915185 0.049691627423223104 1.0512644503314903
+fval after -0.05223904138915185
+Episode 54	Average reward -211.08
+('lagrange multiplier:', tensor(2.2951), 'grad_norm:', tensor(0.3597))
+fval before 1.7763568394002505e-18
+a/e/r 0.04692040451954153 0.04590214010657969 1.022183375559343
+fval after -0.04692040451954153
+Episode 55	Average reward -203.82
+('lagrange multiplier:', tensor(2.3906), 'grad_norm:', tensor(0.3951))
+fval before -7.697546304067752e-18
+a/e/r 0.04848031802490308 0.04781266691566438 1.0139638960197797
+fval after -0.04848031802490309
+Episode 56	Average reward -211.57
+('lagrange multiplier:', tensor(2.4065), 'grad_norm:', tensor(0.3724))
+fval before -2.960594732333751e-18
+a/e/r 0.04658407732228985 0.048130943417062255 0.9678612970170029
+fval after -0.04658407732228985
+Episode 57	Average reward -207.54
+('lagrange multiplier:', tensor(2.3732), 'grad_norm:', tensor(0.3649))
+fval before 2.0132044179869507e-17
+a/e/r 0.04829840151501818 0.047463807617513856 1.0175837957255742
+fval after -0.04829840151501816
+Episode 58	Average reward -184.53
+('lagrange multiplier:', tensor(2.5102), 'grad_norm:', tensor(0.3456))
+fval before -2.3684757858670005e-18
+a/e/r 0.04828138136641466 0.05020411708434129 0.9617016326629847
+fval after -0.04828138136641466
+Episode 59	Average reward -175.62
+('lagrange multiplier:', tensor(2.4608), 'grad_norm:', tensor(0.3628))
+fval before 7.993605777301126e-18
+a/e/r 0.051860286435487235 0.049216360090328336 1.0537204770996151
+fval after -0.05186028643548723
+Episode 60	Average reward -198.20
+('lagrange multiplier:', tensor(2.5699), 'grad_norm:', tensor(0.3709))
+fval before 9.473903143468002e-18
+a/e/r 0.05436447741837604 0.05139813151144344 1.0577131078446336
+fval after -0.05436447741837603
+Episode 61	Average reward -186.10
+('lagrange multiplier:', tensor(2.7158), 'grad_norm:', tensor(0.4149))
+fval before 2.6645352591003756e-17
+a/e/r 0.05421002832697194 0.05431664801479904 0.9980370716580661
+fval after -0.054210028326971915
+Episode 62	Average reward -166.35
+('lagrange multiplier:', tensor(2.7575), 'grad_norm:', tensor(0.4672))
+fval before 9.473903143468002e-18
+a/e/r 0.05611503481966337 0.055150073240097956 1.0174970135645045
+fval after -0.056115034819663366
+Episode 63	Average reward -160.16
+('lagrange multiplier:', tensor(2.5035), 'grad_norm:', tensor(0.4066))
+fval before -7.105427357601002e-18
+a/e/r 0.049815982397717756 0.05007074835241012 0.9949118804276849
+fval after -0.04981598239771776
+Episode 64	Average reward -136.64
+('lagrange multiplier:', tensor(2.6816), 'grad_norm:', tensor(0.4045))
+fval before 2.960594732333751e-18
+a/e/r 0.057135062197112535 0.05363117482892026 1.0653330339931846
+fval after -0.057135062197112535
+Episode 65	Average reward -94.18
+('lagrange multiplier:', tensor(2.5989), 'grad_norm:', tensor(0.3546))
+fval before -2.6349293117770383e-17
+a/e/r 0.04657015864083285 0.05197749295802426 0.8959677735600247
+fval after -0.04657015864083288
+Episode 66	Average reward -186.97
+('lagrange multiplier:', tensor(2.6076), 'grad_norm:', tensor(0.3667))
+fval before -1.5987211554602253e-17
+a/e/r 0.05541528216437527 0.052152057937286805 1.0625713414993616
+fval after -0.05541528216437528
+Episode 67	Average reward -106.13
+('lagrange multiplier:', tensor(2.5641), 'grad_norm:', tensor(0.4716))
+fval before -1.5395092608135503e-17
+a/e/r 0.0520231187560147 0.05128117699012966 1.0144681110971352
+fval after -0.052023118756014716
+Episode 68	Average reward -90.49
+('lagrange multiplier:', tensor(2.4515), 'grad_norm:', tensor(0.3710))
+fval before 2.0724163126336256e-17
+a/e/r 0.04793661854228113 0.049029379599288596 0.9777121173888295
+fval after -0.04793661854228111
+Episode 69	Average reward -106.48
+('lagrange multiplier:', tensor(2.6896), 'grad_norm:', tensor(0.4739))
+fval before 5.921189464667501e-19
+a/e/r 0.053530313600822464 0.05379192402029601 0.9951366227507527
+fval after -0.053530313600822464
+Episode 70	Average reward -67.78
+('lagrange multiplier:', tensor(2.8055), 'grad_norm:', tensor(0.4738))
+fval before -5.625129991434126e-18
+a/e/r 0.05454438746480111 0.056110354142200544 0.9720913064738318
+fval after -0.054544387464801114
+Episode 71	Average reward -66.33
+('lagrange multiplier:', tensor(2.6271), 'grad_norm:', tensor(0.4173))
+fval before 6.8093678843676264e-18
+a/e/r 0.05333181453649003 0.05254213458429562 1.0150294608021204
+fval after -0.053331814536490024
+Episode 72	Average reward -49.67
+('lagrange multiplier:', tensor(2.7517), 'grad_norm:', tensor(0.4523))
+fval before -1.7763568394002505e-18
+a/e/r 0.05274327167405227 0.055033490664905545 0.9583849949697315
+fval after -0.05274327167405227
+Episode 73	Average reward -38.86
+('lagrange multiplier:', tensor(2.6958), 'grad_norm:', tensor(0.4093))
+fval before -1.021405182655144e-17
+a/e/r 0.05295286041994782 0.053915364368371216 0.982147872694559
+fval after -0.052952860419947824
+Episode 74	Average reward -24.74
+('lagrange multiplier:', tensor(2.6309), 'grad_norm:', tensor(0.4008))
+fval before 1.8355687340469255e-17
+a/e/r 0.0552116252286455 0.052617535135793675 1.049300866833786
+fval after -0.05521162522864548
+Episode 75	Average reward -1.00
+('lagrange multiplier:', tensor(2.8280), 'grad_norm:', tensor(0.4503))
+fval before 2.3684757858670005e-18
+a/e/r 0.053925321722946895 0.05655922533670598 0.9534310521744411
+fval after -0.053925321722946895
+Episode 76	Average reward -10.73
+('lagrange multiplier:', tensor(2.7823), 'grad_norm:', tensor(0.4445))
+fval before 2.1538326677728038e-17
+a/e/r 0.058928375974234476 0.055645501483271964 1.0589962243749282
+fval after -0.058928375974234455
+Episode 77	Average reward -20.70
+('lagrange multiplier:', tensor(2.7070), 'grad_norm:', tensor(0.4239))
+fval before 1.3766765505351941e-17
+a/e/r 0.05104024871615322 0.05413992271988756 0.9427469813769107
+fval after -0.05104024871615321
+Episode 78	Average reward 20.50
+('lagrange multiplier:', tensor(2.7419), 'grad_norm:', tensor(0.4946))
+fval before -2.0132044179869507e-17
+a/e/r 0.05596211231626003 0.054838198975784104 1.0204950811928057
+fval after -0.055962112316260054
+Episode 79	Average reward 21.35
+('lagrange multiplier:', tensor(2.6978), 'grad_norm:', tensor(0.4635))
+fval before 1.4802973661668753e-19
+a/e/r 0.05199027865941877 0.05395686727007301 0.9635525798632679
+fval after -0.05199027865941877
+Episode 80	Average reward 23.35
+('lagrange multiplier:', tensor(2.9596), 'grad_norm:', tensor(0.5336))
+fval before -2.6645352591003758e-18
+a/e/r 0.058954426191375454 0.05919122963302269 0.9959993491752852
+fval after -0.058954426191375454
+Episode 81	Average reward 67.03
+('lagrange multiplier:', tensor(2.8536), 'grad_norm:', tensor(0.4321))
+fval before -1.2730557349035128e-17
+a/e/r 0.05661384228357526 0.057071067903303976 0.9919884866969128
+fval after -0.05661384228357527
+Episode 82	Average reward 33.64
+('lagrange multiplier:', tensor(2.7975), 'grad_norm:', tensor(0.4369))
+fval before 4.1448326252672514e-18
+a/e/r 0.05801030648336276 0.05595095433461761 1.0368063811106614
+fval after -0.05801030648336275
+Episode 83	Average reward 95.28
+('lagrange multiplier:', tensor(2.7139), 'grad_norm:', tensor(0.5062))
+fval before 2.1316282072803006e-17
+a/e/r 0.053662870326058765 0.05427878452163166 0.9886527636718278
+fval after -0.053662870326058744
+Episode 84	Average reward 96.05
+('lagrange multiplier:', tensor(2.8902), 'grad_norm:', tensor(0.4819))
+fval before -1.4802973661668755e-18
+a/e/r 0.05367606798072468 0.057803113353418395 0.9286016767391018
+fval after -0.05367606798072468
+Episode 85	Average reward 82.01
+('lagrange multiplier:', tensor(3.2599), 'grad_norm:', tensor(0.5402))
+fval before -2.960594732333751e-17
+a/e/r 0.06184262791342471 0.0651974118451258 0.948544216146643
+fval after -0.061842627913424736
+Episode 86	Average reward 72.88
+('lagrange multiplier:', tensor(2.9659), 'grad_norm:', tensor(0.5037))
+fval before -1.3026616822268503e-17
+a/e/r 0.06636605961641152 0.059318606146366686 1.1188067948302003
+fval after -0.06636605961641154
+Episode 87	Average reward 124.32
+('lagrange multiplier:', tensor(2.7154), 'grad_norm:', tensor(0.4610))
+fval before -1.7171449447535755e-17
+a/e/r 0.05295086659022222 0.05430853875263838 0.9750007605875751
+fval after -0.05295086659022223
+Episode 88	Average reward 104.55
+('lagrange multiplier:', tensor(2.7809), 'grad_norm:', tensor(0.4955))
+fval before 2.3684757858670005e-18
+a/e/r 0.05443234619918599 0.0556172754699829 0.9786949421598973
+fval after -0.05443234619918599
+Episode 89	Average reward 116.95
+('lagrange multiplier:', tensor(2.9311), 'grad_norm:', tensor(0.5415))
+fval before 1.569115208136888e-17
+a/e/r 0.05986943578274732 0.05862247095599992 1.0212711065639544
+fval after -0.0598694357827473
+Episode 90	Average reward 135.27
+('lagrange multiplier:', tensor(3.0133), 'grad_norm:', tensor(0.5668))
+fval before 1.0362081563168129e-18
+a/e/r 0.05669594871083478 0.060266062643915354 0.9407607901286874
+fval after -0.05669594871083478
+Episode 91	Average reward 109.79
+('lagrange multiplier:', tensor(2.9055), 'grad_norm:', tensor(0.5639))
+fval before -1.3618735768735253e-17
+a/e/r 0.061151860093403454 0.05811015853055704 1.052343714761111
+fval after -0.06115186009340347
+Episode 92	Average reward 159.35
+('lagrange multiplier:', tensor(2.8666), 'grad_norm:', tensor(0.5402))
+fval before -1.7763568394002505e-18
+a/e/r 0.05496633972179399 0.05733209047467465 0.9587360109618593
+fval after -0.05496633972179399
+Episode 93	Average reward 155.08
+('lagrange multiplier:', tensor(2.7876), 'grad_norm:', tensor(0.5556))
+fval before 3.1974423109204506e-17
+a/e/r 0.055454279195318916 0.05575245616662483 0.9946517697728909
+fval after -0.05545427919531888
+Episode 94	Average reward 155.46
+('lagrange multiplier:', tensor(2.8202), 'grad_norm:', tensor(0.5947))
+fval before 2.9013828376870755e-17
+a/e/r 0.05515159493308971 0.05640442482430971 0.9777884466489578
+fval after -0.05515159493308968
+Episode 95	Average reward 174.12
+('lagrange multiplier:', tensor(2.7924), 'grad_norm:', tensor(0.4981))
+fval before -1.3914795241968628e-17
+a/e/r 0.055114123919855526 0.0558480396661404 0.9868587017436561
+fval after -0.05511412391985554
+Episode 96	Average reward 221.43
+('lagrange multiplier:', tensor(3.1426), 'grad_norm:', tensor(0.6575))
+fval before 1.1842378929335004e-17
+a/e/r 0.05844954652521974 0.06285225153607822 0.9299515148103922
+fval after -0.05844954652521973
+Episode 97	Average reward 204.57
+('lagrange multiplier:', tensor(3.0054), 'grad_norm:', tensor(0.6314))
+fval before 2.4424906541753444e-17
+a/e/r 0.06208435064111954 0.060108734585987936 1.0328673705866394
+fval after -0.062084350641119515
+Episode 98	Average reward 251.16
+('lagrange multiplier:', tensor(3.0193), 'grad_norm:', tensor(0.6931))
+fval before 3.552713678800501e-18
+a/e/r 0.0579138073021632 0.06038587152645861 0.959062208397336
+fval after -0.057913807302163195
+Episode 99	Average reward 238.76
+('lagrange multiplier:', tensor(2.7740), 'grad_norm:', tensor(0.5504))
+fval before 1.7171449447535755e-17
+a/e/r 0.0559603094054064 0.055480028752784155 1.0086568205428001
+fval after -0.05596030940540639
+Episode 100	Average reward 275.30
+('lagrange multiplier:', tensor(2.7822), 'grad_norm:', tensor(0.5277))
+fval before -2.4868995751603507e-17
+a/e/r 0.05382025090129993 0.05564386123928713 0.9672271065060517
+fval after -0.05382025090129996
+Episode 101	Average reward 253.96
+('lagrange multiplier:', tensor(2.9599), 'grad_norm:', tensor(0.6978))
+fval before -7.105427357601002e-18
+a/e/r 0.05555778614102909 0.05919885217398074 0.9384943136692777
+fval after -0.055557786141029096
+Episode 102	Average reward 256.39
+('lagrange multiplier:', tensor(2.8660), 'grad_norm:', tensor(0.6038))
+fval before 2.1908401019269756e-17
+a/e/r 0.055403193394444314 0.057319406233758474 0.9665695622962402
+fval after -0.05540319339444429
+Episode 103	Average reward 296.97
+('lagrange multiplier:', tensor(2.9941), 'grad_norm:', tensor(0.6656))
+fval before -1.6579330501069006e-17
+a/e/r 0.055327667648103505 0.05988132202657571 0.9239553466028813
+fval after -0.05532766764810352
+Episode 104	Average reward 304.53
+('lagrange multiplier:', tensor(3.0374), 'grad_norm:', tensor(0.6275))
+fval before -1.8355687340469255e-17
+a/e/r 0.0604433511280722 0.060747261294794484 0.9949971379738838
+fval after -0.06044335112807222
+Episode 105	Average reward 330.90
+('lagrange multiplier:', tensor(2.5824), 'grad_norm:', tensor(0.5942))
+fval before -9.473903143468002e-18
+a/e/r 0.04906235299131736 0.051647438847513265 0.9499474530803307
+fval after -0.049062352991317365
+Episode 106	Average reward 343.49
+('lagrange multiplier:', tensor(2.8686), 'grad_norm:', tensor(0.6269))
+fval before 3.0790185216271007e-17
+a/e/r 0.05363472453477526 0.05737202438106191 0.9348584979072081
+fval after -0.05363472453477523
+Episode 107	Average reward 298.05
+('lagrange multiplier:', tensor(2.8971), 'grad_norm:', tensor(0.6548))
+fval before 9.917992353318065e-18
+a/e/r 0.05825619612791188 0.05794289203478862 1.005407118666689
+fval after -0.05825619612791187
+Episode 108	Average reward 387.24
+('lagrange multiplier:', tensor(2.8398), 'grad_norm:', tensor(0.6052))
+fval before -1.1842378929335003e-18
+a/e/r 0.05392280658666086 0.05679652733566099 0.9494032314332043
+fval after -0.05392280658666086
+Episode 109	Average reward 378.00
+('lagrange multiplier:', tensor(2.7604), 'grad_norm:', tensor(0.6704))
+fval before 1.983598470663613e-17
+a/e/r 0.052002740479369744 0.055208898510897345 0.9419267886517468
+fval after -0.05200274047936972
+Episode 110	Average reward 421.52
+('lagrange multiplier:', tensor(2.6936), 'grad_norm:', tensor(0.7217))
+fval before -2.457293627837013e-17
+a/e/r 0.04755590354908881 0.05387260407589365 0.8827474439901566
+fval after -0.04755590354908884
+Episode 111	Average reward 471.08
+('lagrange multiplier:', tensor(2.5693), 'grad_norm:', tensor(0.5174))
+fval before -1.1842378929335003e-18
+a/e/r 0.04748660108044019 0.05138634183818339 0.9241093913627173
+fval after -0.04748660108044019
+Episode 112	Average reward 412.59
+('lagrange multiplier:', tensor(2.7393), 'grad_norm:', tensor(0.5405))
+fval before 7.697546304067752e-18
+a/e/r 0.04975198292148977 0.05478556930939344 0.9081220392275704
+fval after -0.04975198292148976
+Episode 113	Average reward 445.44
+('lagrange multiplier:', tensor(2.6810), 'grad_norm:', tensor(0.7347))
+fval before 1.0658141036401503e-17
+a/e/r 0.05033819920222842 0.05361921768972276 0.9388089079090907
+fval after -0.05033819920222841
+Episode 114	Average reward 453.13
+('lagrange multiplier:', tensor(2.6861), 'grad_norm:', tensor(0.7189))
+fval before 7.697546304067752e-18
+a/e/r 0.049452170262824814 0.053721835130224986 0.9205227286623726
+fval after -0.04945217026282481
+Episode 115	Average reward 491.08
+('lagrange multiplier:', tensor(2.8077), 'grad_norm:', tensor(0.6636))
+fval before 4.736951571734001e-18
+a/e/r 0.05190458360396123 0.056154551739532224 0.9243165869209662
+fval after -0.051904583603961225
+Episode 116	Average reward 485.35
+('lagrange multiplier:', tensor(2.6496), 'grad_norm:', tensor(0.7187))
+fval before 1.0066022089934753e-17
+a/e/r 0.0480176209159889 0.05299221332704717 0.9061259740113696
+fval after -0.04801762091598889
+Episode 117	Average reward 527.75
+('lagrange multiplier:', tensor(2.5349), 'grad_norm:', tensor(0.6182))
+fval before -2.3684757858670005e-18
+a/e/r 0.045243889340759555 0.05069731295808982 0.8924317030009368
+fval after -0.045243889340759555
+Episode 118	Average reward 552.54
+('lagrange multiplier:', tensor(2.5330), 'grad_norm:', tensor(0.5581))
+fval before -1.1842378929335004e-17
+a/e/r 0.045653146706039295 0.05065933388324566 0.9011793722210383
+fval after -0.04565314670603931
+Episode 119	Average reward 562.34
+('lagrange multiplier:', tensor(2.5381), 'grad_norm:', tensor(0.5408))
+fval before 1.1842378929335003e-18
+a/e/r 0.04633920585141367 0.050761100760596624 0.9128881201761595
+fval after -0.04633920585141367
+Episode 120	Average reward 554.70
+('lagrange multiplier:', tensor(2.4994), 'grad_norm:', tensor(0.7158))
+fval before -5.921189464667501e-19
+a/e/r 0.04509153387831329 0.049987765330225684 0.9020514035871128
+fval after -0.04509153387831329
+Episode 121	Average reward 573.05
+('lagrange multiplier:', tensor(2.4801), 'grad_norm:', tensor(0.5762))
+fval before 5.921189464667501e-19
+a/e/r 0.04366465144286633 0.04960296282768376 0.8802831313636125
+fval after -0.04366465144286633
+Episode 122	Average reward 571.00
+('lagrange multiplier:', tensor(2.4834), 'grad_norm:', tensor(0.5983))
+fval before -1.3618735768735253e-17
+a/e/r 0.04462528018618084 0.04966705608830138 0.8984885294357503
+fval after -0.04462528018618085
+Episode 123	Average reward 597.45
+('lagrange multiplier:', tensor(2.8238), 'grad_norm:', tensor(0.7456))
+fval before 0.0
+a/e/r 0.05005459640107367 0.05647519707729028 0.886311141731306
+fval after -0.05005459640107367
+Episode 124	Average reward 580.04
+('lagrange multiplier:', tensor(2.8296), 'grad_norm:', tensor(0.7488))
+fval before 5.921189464667502e-18
+a/e/r 0.04862113808111116 0.0565915297410724 0.8591592823797344
+fval after -0.048621138081111154
+Episode 125	Average reward 645.79
+('lagrange multiplier:', tensor(2.5678), 'grad_norm:', tensor(0.7289))
+fval before 1.7763568394002505e-18
+a/e/r 0.04301573172910425 0.05135536957235811 0.8376092332175008
+fval after -0.04301573172910425
+Episode 126	Average reward 608.13
+('lagrange multiplier:', tensor(2.4078), 'grad_norm:', tensor(0.6613))
+fval before 1.4506914188435377e-17
+a/e/r 0.041059275403960975 0.04815679233105178 0.8526164932601982
+fval after -0.04105927540396096
+Episode 127	Average reward 669.67
+('lagrange multiplier:', tensor(2.5156), 'grad_norm:', tensor(0.6625))
+fval before 1.8947806286936004e-17
+a/e/r 0.044442382597741144 0.050312598216916554 0.883325134713443
+fval after -0.04444238259774112
+Episode 128	Average reward 598.37
+('lagrange multiplier:', tensor(2.8797), 'grad_norm:', tensor(0.7412))
+fval before -2.960594732333751e-18
+a/e/r 0.05136558339584713 0.05759441094687187 0.8918501387787343
+fval after -0.05136558339584713
+Episode 129	Average reward 647.73
+('lagrange multiplier:', tensor(2.3561), 'grad_norm:', tensor(0.5864))
+fval before 1.1842378929335004e-17
+a/e/r 0.04228576557367821 0.04712179023816265 0.8973717967835637
+fval after -0.0422857655736782
+Episode 130	Average reward 616.90
+('lagrange multiplier:', tensor(2.5902), 'grad_norm:', tensor(0.6967))
+fval before 1.1842378929335003e-18
+a/e/r 0.046360996242285825 0.0518031996257067 0.8949446477680454
+fval after -0.046360996242285825
+Episode 131	Average reward 653.86
+('lagrange multiplier:', tensor(2.4274), 'grad_norm:', tensor(0.5909))
+fval before -1.4210854715202004e-17
+a/e/r 0.042169121580180505 0.048548954064301784 0.86858970276329
+fval after -0.04216912158018052
+Episode 132	Average reward 656.07
+('lagrange multiplier:', tensor(2.7237), 'grad_norm:', tensor(0.7794))
+fval before 8.289665250534503e-18
+a/e/r 0.044479758273201886 0.05447367757777177 0.8165367247272479
+fval after -0.04447975827320188
+Episode 133	Average reward 681.98
+('lagrange multiplier:', tensor(2.4048), 'grad_norm:', tensor(0.6038))
+fval before 4.736951571734001e-18
+a/e/r 0.04224271660600994 0.04809603620791214 0.878299334760163
+fval after -0.042242716606009936
+Episode 134	Average reward 704.72
+('lagrange multiplier:', tensor(2.7315), 'grad_norm:', tensor(0.6899))
+fval before -8.289665250534503e-18
+a/e/r 0.04535074562725805 0.05463036985799978 0.8301379936679512
+fval after -0.045350745627258056
+Episode 135	Average reward 705.93
+('lagrange multiplier:', tensor(2.4305), 'grad_norm:', tensor(0.6932))
+fval before -1.7763568394002505e-18
+a/e/r 0.04415721056395952 0.04860976746385167 0.9084020119371428
+fval after -0.04415721056395952
+Episode 136	Average reward 679.18
+('lagrange multiplier:', tensor(2.3859), 'grad_norm:', tensor(0.7899))
+fval before -1.7763568394002505e-18
+a/e/r 0.04190288047924464 0.047718665632093635 0.8781234748329272
+fval after -0.04190288047924464
+Episode 137	Average reward 705.56
+('lagrange multiplier:', tensor(2.2470), 'grad_norm:', tensor(0.7292))
+fval before 3.552713678800501e-18
+a/e/r 0.04064147881069638 0.04493941942573479 0.904361456601792
+fval after -0.04064147881069637
+Episode 138	Average reward 704.18
+('lagrange multiplier:', tensor(2.5663), 'grad_norm:', tensor(0.8836))
+fval before -2.960594732333751e-18
+a/e/r 0.044072323740614594 0.0513264778779178 0.8586664342221666
+fval after -0.044072323740614594
+Episode 139	Average reward 687.36
+('lagrange multiplier:', tensor(2.4187), 'grad_norm:', tensor(0.7873))
+fval before 1.1842378929335003e-18
+a/e/r 0.043127288409272865 0.04837375865049744 0.8915430516960536
+fval after -0.043127288409272865
+Episode 140	Average reward 733.82
+('lagrange multiplier:', tensor(2.4712), 'grad_norm:', tensor(0.6353))
+fval before 1.1842378929335003e-18
+a/e/r 0.04415749554942125 0.04942457195639549 0.8934320278661981
+fval after -0.04415749554942125
+Episode 141	Average reward 724.83
+('lagrange multiplier:', tensor(2.2168), 'grad_norm:', tensor(0.7652))
+fval before -4.1448326252672514e-18
+a/e/r 0.03896264142924065 0.04433520642463835 0.8788194433123918
+fval after -0.038962641429240656
+Episode 142	Average reward 725.40
+('lagrange multiplier:', tensor(2.6141), 'grad_norm:', tensor(0.7563))
+fval before 0.0
+a/e/r 0.04539360146855184 0.052281890093622746 0.8682471384883783
+fval after -0.04539360146855184
+Episode 143	Average reward 730.96
+('lagrange multiplier:', tensor(2.3106), 'grad_norm:', tensor(0.5874))
+fval before -5.921189464667502e-18
+a/e/r 0.04203347801917131 0.04621192613319947 0.9095807410843607
+fval after -0.042033478019171316
+Episode 144	Average reward 773.86
+('lagrange multiplier:', tensor(2.5297), 'grad_norm:', tensor(0.6852))
+fval before -3.019806626980426e-17
+a/e/r 0.04581865159680894 0.050593805093681894 0.9056178224185539
+fval after -0.045818651596808965
+Episode 145	Average reward 667.76
+('lagrange multiplier:', tensor(2.5391), 'grad_norm:', tensor(0.8302))
+fval before -1.0954200509634878e-17
+a/e/r 0.048147840917166895 0.05078220870841951 0.9481241982526087
+fval after -0.04814784091716691
+Episode 146	Average reward 745.47
+('lagrange multiplier:', tensor(2.2471), 'grad_norm:', tensor(0.7849))
+fval before 7.105427357601002e-18
+a/e/r 0.041737462508432965 0.04494116171220258 0.9287134759825371
+fval after -0.04173746250843296
+Episode 147	Average reward 749.81
+('lagrange multiplier:', tensor(2.5745), 'grad_norm:', tensor(0.8579))
+fval before -2.3684757858670005e-18
+a/e/r 0.04363052290975482 0.051489635965462806 0.8473651462407004
+fval after -0.04363052290975482
+Episode 148	Average reward 754.82
+('lagrange multiplier:', tensor(2.7692), 'grad_norm:', tensor(0.6871))
+fval before 1.0658141036401503e-17
+a/e/r 0.046082575667755844 0.05538409564264078 0.8320543133013875
+fval after -0.04608257566775583
+Episode 149	Average reward 762.18
+('lagrange multiplier:', tensor(2.3746), 'grad_norm:', tensor(0.9113))
+fval before 1.7763568394002505e-18
+a/e/r 0.04314511538329471 0.047491630268868934 0.9084782968921707
+fval after -0.04314511538329471
+Episode 150	Average reward 737.51
+('lagrange multiplier:', tensor(2.2603), 'grad_norm:', tensor(0.7934))
+fval before -9.473903143468002e-18
+a/e/r 0.04020040429900602 0.04520596508387279 0.8892721176159006
+fval after -0.04020040429900603
+Episode 151	Average reward 753.34
+('lagrange multiplier:', tensor(2.3176), 'grad_norm:', tensor(0.7175))
+fval before 5.3290705182007515e-18
+a/e/r 0.04084558468999866 0.0463510828756772 0.8812218001368948
+fval after -0.04084558468999865
+Episode 152	Average reward 760.06
+('lagrange multiplier:', tensor(2.4466), 'grad_norm:', tensor(0.8013))
+fval before -3.552713678800501e-18
+a/e/r 0.042509396394616594 0.0489325533828848 0.8687344815626392
+fval after -0.0425093963946166
+Episode 153	Average reward 778.30
+('lagrange multiplier:', tensor(2.1265), 'grad_norm:', tensor(0.7037))
+fval before -4.1448326252672514e-18
+a/e/r 0.0387241882929426 0.042529946448143674 0.9105158018517283
+fval after -0.03872418829294261
+Episode 154	Average reward 799.59
+('lagrange multiplier:', tensor(2.2093), 'grad_norm:', tensor(0.6733))
+fval before 1.1842378929335003e-18
+a/e/r 0.03855571976195711 0.04418520301376367 0.8725934732029413
+fval after -0.03855571976195711
+Episode 155	Average reward 767.63
+('lagrange multiplier:', tensor(2.5434), 'grad_norm:', tensor(0.9593))
+fval before -3.552713678800501e-18
+a/e/r 0.041330623878685614 0.05086814431429035 0.812505044872939
+fval after -0.04133062387868562
+Episode 156	Average reward 767.91
+('lagrange multiplier:', tensor(2.6353), 'grad_norm:', tensor(0.8808))
+fval before -1.1842378929335003e-18
+a/e/r 0.045165048904225055 0.052705261929789415 0.8569362384422081
+fval after -0.045165048904225055
+Episode 157	Average reward 781.13
+('lagrange multiplier:', tensor(2.1559), 'grad_norm:', tensor(0.7826))
+fval before 2.3684757858670005e-18
+a/e/r 0.03778242635979919 0.04311823058767317 0.8762517813196306
+fval after -0.03778242635979919
+Episode 158	Average reward 806.74
+('lagrange multiplier:', tensor(2.4094), 'grad_norm:', tensor(0.7103))
+fval before -5.3290705182007515e-18
+a/e/r 0.04230303368836092 0.048188399009177235 0.8778675896724546
+fval after -0.04230303368836093
+Episode 159	Average reward 744.26
+('lagrange multiplier:', tensor(2.3003), 'grad_norm:', tensor(0.8997))
+fval before 2.960594732333751e-18
+a/e/r 0.04127642310531244 0.04600637268596617 0.8971892521729591
+fval after -0.04127642310531244
+Episode 160	Average reward 774.47
+('lagrange multiplier:', tensor(2.4206), 'grad_norm:', tensor(0.8897))
+fval before 5.3290705182007515e-18
+a/e/r 0.04251346853143258 0.048412882765883423 0.8781437109833053
+fval after -0.04251346853143257
+Episode 161	Average reward 781.78
+('lagrange multiplier:', tensor(2.4780), 'grad_norm:', tensor(0.9576))
+fval before 0.0
+a/e/r 0.041967670235706196 0.04956011509920091 0.8468033246432647
+fval after -0.041967670235706196
+Episode 162	Average reward 817.85
+('lagrange multiplier:', tensor(2.6647), 'grad_norm:', tensor(0.9003))
+fval before 4.1448326252672514e-18
+a/e/r 0.046057384045183856 0.053293982202098196 0.8642135967721055
+fval after -0.04605738404518385
+Episode 163	Average reward 776.78
+('lagrange multiplier:', tensor(2.5024), 'grad_norm:', tensor(0.8423))
+fval before -1.5395092608135503e-17
+a/e/r 0.043671712066187036 0.050047935714134684 0.8725976694749699
+fval after -0.04367171206618705
+Episode 164	Average reward 800.69
+('lagrange multiplier:', tensor(2.3206), 'grad_norm:', tensor(0.8110))
+fval before -5.921189464667502e-18
+a/e/r 0.04101803430953574 0.0464110025554518 0.8837997899426423
+fval after -0.041018034309535746
+Episode 165	Average reward 818.81
+('lagrange multiplier:', tensor(2.7035), 'grad_norm:', tensor(1.0128))
+fval before 0.0
+a/e/r 0.04726772499913058 0.05406957305840868 0.8742019277287356
+fval after -0.04726772499913058
+Episode 166	Average reward 784.98
+('lagrange multiplier:', tensor(2.2627), 'grad_norm:', tensor(0.7481))
+fval before -1.9539925233402754e-17
+a/e/r 0.04227522063695084 0.04525409687534344 0.9341744406788587
+fval after -0.04227522063695086
+Episode 167	Average reward 824.37
+('lagrange multiplier:', tensor(2.3148), 'grad_norm:', tensor(0.9865))
+fval before 2.3684757858670005e-18
+a/e/r 0.04006758633612272 0.0462963370305845 0.865459103376863
+fval after -0.04006758633612272
+Episode 168	Average reward 834.17
+('lagrange multiplier:', tensor(2.1563), 'grad_norm:', tensor(0.7817))
+fval before -1.1842378929335003e-18
+a/e/r 0.038244381426840446 0.04312505595442478 0.8868250853345604
+fval after -0.038244381426840446
+Episode 169	Average reward 852.35
+('lagrange multiplier:', tensor(2.5479), 'grad_norm:', tensor(0.7514))
+fval before 9.473903143468002e-18
+a/e/r 0.04243609256926791 0.05095789964258265 0.832767693859314
+fval after -0.042436092569267905
+Episode 170	Average reward 832.05
+('lagrange multiplier:', tensor(2.4915), 'grad_norm:', tensor(0.9194))
+fval before -1.1250259982868253e-17
+a/e/r 0.04222470692892035 0.0498295045225763 0.8473836401441552
+fval after -0.042224706928920365
+Episode 171	Average reward 870.47
+('lagrange multiplier:', tensor(2.5212), 'grad_norm:', tensor(0.7440))
+fval before 3.1974423109204506e-17
+a/e/r 0.04276740891989555 0.05042334370851426 0.8481668563497909
+fval after -0.042767408919895514
+Episode 172	Average reward 810.68
+('lagrange multiplier:', tensor(2.4130), 'grad_norm:', tensor(0.8141))
+fval before -7.105427357601002e-18
+a/e/r 0.041773368143435415 0.048260045411214786 0.865589076584831
+fval after -0.04177336814343542
+Episode 173	Average reward 813.17
+('lagrange multiplier:', tensor(2.1654), 'grad_norm:', tensor(0.7729))
+fval before 1.8355687340469255e-17
+a/e/r 0.037333488123709076 0.04330778039265816 0.8620503702849226
+fval after -0.037333488123709055
+Episode 174	Average reward 857.92
+('lagrange multiplier:', tensor(2.4061), 'grad_norm:', tensor(0.8415))
+fval before 2.960594732333751e-18
+a/e/r 0.042306318093001165 0.04812193546581799 0.8791483069722376
+fval after -0.042306318093001165
+Episode 175	Average reward 823.65
+('lagrange multiplier:', tensor(2.1303), 'grad_norm:', tensor(0.8077))
+fval before 2.6645352591003758e-18
+a/e/r 0.03878719057911733 0.04260549356791445 0.9103800315630511
+fval after -0.03878719057911733
+Episode 176	Average reward 830.01
+('lagrange multiplier:', tensor(2.5278), 'grad_norm:', tensor(0.8304))
+fval before 0.0
+a/e/r 0.042181746249530694 0.050555774030757325 0.8343606058502436
+fval after -0.042181746249530694
+Episode 177	Average reward 866.02
+('lagrange multiplier:', tensor(2.3201), 'grad_norm:', tensor(0.7348))
+fval before 1.5395092608135503e-17
+a/e/r 0.03954464916931713 0.04640251602225184 0.8522091593126957
+fval after -0.03954464916931712
+Episode 178	Average reward 851.01
+('lagrange multiplier:', tensor(2.5387), 'grad_norm:', tensor(1.0373))
+fval before 4.736951571734001e-18
+a/e/r 0.044911314137681894 0.050773187714649524 0.8845478521082435
+fval after -0.04491131413768189
+Episode 179	Average reward 836.73
+('lagrange multiplier:', tensor(2.5990), 'grad_norm:', tensor(0.9865))
+fval before -8.881784197001253e-18
+a/e/r 0.044657424764596186 0.05198067904813161 0.8591158403922649
+fval after -0.04465742476459619
+Episode 180	Average reward 840.58
+('lagrange multiplier:', tensor(2.0085), 'grad_norm:', tensor(0.7582))
+fval before 9.473903143468002e-18
+a/e/r 0.03641751953414315 0.04016964750532414 0.906592957513912
+fval after -0.03641751953414314
+Episode 181	Average reward 851.91
+('lagrange multiplier:', tensor(2.1878), 'grad_norm:', tensor(0.7258))
+fval before 4.736951571734001e-18
+a/e/r 0.0367952147184136 0.04375541113654 0.8409294704966452
+fval after -0.03679521471841359
+Episode 182	Average reward 868.04
+('lagrange multiplier:', tensor(2.4014), 'grad_norm:', tensor(0.9086))
+fval before 9.473903143468002e-18
+a/e/r 0.04131010365272443 0.048028185744891025 0.860122093142333
+fval after -0.041310103652724424
+Episode 183	Average reward 874.61
+('lagrange multiplier:', tensor(2.1200), 'grad_norm:', tensor(0.6483))
+fval before -1.3618735768735253e-17
+a/e/r 0.038766654782817496 0.04239936947577078 0.9143214925630153
+fval after -0.03876665478281751
+Episode 184	Average reward 832.08
+('lagrange multiplier:', tensor(2.3651), 'grad_norm:', tensor(0.8419))
+fval before 5.921189464667501e-19
+a/e/r 0.0399388856230685 0.047302616026001706 0.8443272059438436
+fval after -0.0399388856230685
+Episode 185	Average reward 852.70
+('lagrange multiplier:', tensor(2.2099), 'grad_norm:', tensor(0.7863))
+fval before 5.921189464667501e-19
+a/e/r 0.03816655687783302 0.04419731941553678 0.8635491333534642
+fval after -0.03816655687783302
+Episode 186	Average reward 809.52
+('lagrange multiplier:', tensor(2.2975), 'grad_norm:', tensor(0.8203))
+fval before -1.5395092608135503e-17
+a/e/r 0.04024287697730845 0.045950688638333154 0.8757839799540434
+fval after -0.04024287697730847
+Episode 187	Average reward 856.17
+('lagrange multiplier:', tensor(2.2935), 'grad_norm:', tensor(0.8194))
+fval before -1.0658141036401503e-17
+a/e/r 0.04046965835919606 0.04586996338011414 0.8822692537125666
+fval after -0.040469658359196074
+Episode 188	Average reward 867.43
+('lagrange multiplier:', tensor(2.3693), 'grad_norm:', tensor(0.9615))
+fval before -1.4210854715202004e-17
+a/e/r 0.038916676768685494 0.04738668020937524 0.8212577162344875
+fval after -0.03891667676868551
+Episode 189	Average reward 891.35
+('lagrange multiplier:', tensor(2.1787), 'grad_norm:', tensor(0.7362))
+fval before -5.921189464667501e-19
+a/e/r 0.0380009664494555 0.04357346340372389 0.8721125997573984
+fval after -0.0380009664494555
+Episode 190	Average reward 871.09
+('lagrange multiplier:', tensor(2.5499), 'grad_norm:', tensor(0.9107))
+fval before -7.105427357601002e-18
+a/e/r 0.04451444903899433 0.050997655839456354 0.8728724547482821
+fval after -0.04451444903899434
+Episode 191	Average reward 845.67
+('lagrange multiplier:', tensor(2.1899), 'grad_norm:', tensor(1.0107))
+fval before 8.289665250534503e-18
+a/e/r 0.039275572140748206 0.0437983844444048 0.8967356362333958
+fval after -0.0392755721407482
+Episode 192	Average reward 851.57
+('lagrange multiplier:', tensor(2.5379), 'grad_norm:', tensor(0.9516))
+fval before 5.625129991434126e-18
+a/e/r 0.043655314038153696 0.05075715450985371 0.860081981736756
+fval after -0.04365531403815369
+Episode 193	Average reward 871.04
+('lagrange multiplier:', tensor(2.1882), 'grad_norm:', tensor(0.7783))
+fval before 4.736951571734001e-18
+a/e/r 0.039110659425378974 0.04376456457667869 0.8936604260475222
+fval after -0.03911065942537897
+Episode 194	Average reward 881.52
+('lagrange multiplier:', tensor(2.2957), 'grad_norm:', tensor(0.9106))
+fval before -1.2434497875801754e-17
+a/e/r 0.03953908010275077 0.045914048471562253 0.86115429632044
+fval after -0.039539080102750784
+Episode 195	Average reward 867.16
+('lagrange multiplier:', tensor(2.4756), 'grad_norm:', tensor(0.8243))
+fval before 1.509903313490213e-17
+a/e/r 0.04429048658356883 0.049511744132125356 0.8945450692542105
+fval after -0.044290486583568815
+Episode 196	Average reward 847.30
+('lagrange multiplier:', tensor(2.2137), 'grad_norm:', tensor(0.9546))
+fval before -1.7763568394002505e-18
+a/e/r 0.038492536490088713 0.04427325574510081 0.8694308977795974
+fval after -0.038492536490088713
+Episode 197	Average reward 794.57
+('lagrange multiplier:', tensor(2.6046), 'grad_norm:', tensor(0.8961))
+fval before 1.3026616822268503e-17
+a/e/r 0.04521209715345054 0.052091371529175146 0.8679383135099122
+fval after -0.04521209715345052
+Episode 198	Average reward 899.68
+('lagrange multiplier:', tensor(2.6310), 'grad_norm:', tensor(1.0223))
+fval before -1.1842378929335004e-17
+a/e/r 0.043428331038370925 0.05261958360883456 0.8253263910488172
+fval after -0.04342833103837094
+Episode 199	Average reward 884.51
+('lagrange multiplier:', tensor(2.2828), 'grad_norm:', tensor(0.8260))
+fval before -4.1448326252672514e-18
+a/e/r 0.0387323725976082 0.0456561835790433 0.8483488886133442
+fval after -0.03873237259760821
+Episode 200	Average reward 860.72
+('lagrange multiplier:', tensor(2.5612), 'grad_norm:', tensor(1.0267))
+fval before 1.4210854715202004e-17
+a/e/r 0.042694881149692755 0.05122317262661879 0.8335071601462226
+fval after -0.04269488114969274
+Episode 201	Average reward 834.23
+('lagrange multiplier:', tensor(2.3844), 'grad_norm:', tensor(0.9889))
+fval before -1.1842378929335003e-18
+a/e/r 0.040674374171950654 0.04768817332259332 0.8529237196149905
+fval after -0.040674374171950654
+Episode 202	Average reward 886.33
+('lagrange multiplier:', tensor(2.3876), 'grad_norm:', tensor(1.1452))
+fval before -5.921189464667501e-19
+a/e/r 0.039034224069372014 0.04775134025336603 0.8174477169071807
+fval after -0.039034224069372014
+Episode 203	Average reward 858.96
+('lagrange multiplier:', tensor(2.2324), 'grad_norm:', tensor(0.8339))
+fval before -1.0658141036401503e-17
+a/e/r 0.040683946566890256 0.04464820373355857 0.9112112731270151
+fval after -0.04068394656689027
+Episode 204	Average reward 883.81
+('lagrange multiplier:', tensor(2.3121), 'grad_norm:', tensor(0.8830))
+fval before 3.552713678800501e-18
+a/e/r 0.039270709996513456 0.04624255888907128 0.8492330645178567
+fval after -0.03927070999651345
+Episode 205	Average reward 895.61
+('lagrange multiplier:', tensor(2.3510), 'grad_norm:', tensor(0.8775))
+fval before 1.2434497875801754e-17
+a/e/r 0.04100370463893212 0.04701918880025316 0.8720632083450863
+fval after -0.041003704638932104
+Episode 206	Average reward 874.14
+('lagrange multiplier:', tensor(2.4441), 'grad_norm:', tensor(0.8680))
+fval before 3.552713678800501e-18
+a/e/r 0.03828995807223053 0.04888274548745196 0.7833021179642915
+fval after -0.038289958072230526
+Episode 207	Average reward 884.38
+('lagrange multiplier:', tensor(2.2563), 'grad_norm:', tensor(0.9156))
+fval before 1.0658141036401503e-17
+a/e/r 0.03917835001183033 0.04512581182136656 0.8682026634095882
+fval after -0.039178350011830315
+Episode 208	Average reward 896.51
+('lagrange multiplier:', tensor(2.3558), 'grad_norm:', tensor(0.8591))
+fval before 1.1842378929335004e-17
+a/e/r 0.04207257496641653 0.04711611355097101 0.8929551228987023
+fval after -0.04207257496641652
+Episode 209	Average reward 834.62
+('lagrange multiplier:', tensor(2.4860), 'grad_norm:', tensor(0.8542))
+fval before -1.2138438402568379e-17
+a/e/r 0.045823685244969554 0.04971911982295753 0.9216511758080383
+fval after -0.04582368524496957
+Episode 210	Average reward 898.43
+('lagrange multiplier:', tensor(2.8803), 'grad_norm:', tensor(0.9912))
+fval before 6.5133084111342516e-18
+a/e/r 0.045705594360568404 0.05760599409642141 0.7934173357735305
+fval after -0.0457055943605684
+Episode 211	Average reward 916.06
+('lagrange multiplier:', tensor(2.3248), 'grad_norm:', tensor(0.8379))
+fval before -1.0954200509634878e-17
+a/e/r 0.0397016973140416 0.04649603451660158 0.8538727598343029
+fval after -0.03970169731404161
+Episode 212	Average reward 915.93
+('lagrange multiplier:', tensor(2.4023), 'grad_norm:', tensor(0.9961))
+fval before 0.0
+a/e/r 0.043294085039083316 0.048045925119080915 0.9010979585007417
+fval after -0.043294085039083316
+Episode 213	Average reward 863.32
+('lagrange multiplier:', tensor(2.3780), 'grad_norm:', tensor(0.9035))
+fval before -2.960594732333751e-18
+a/e/r 0.041843449825669086 0.047559863773732995 0.8798059225892685
+fval after -0.041843449825669086
+Episode 214	Average reward 901.06
+('lagrange multiplier:', tensor(2.4122), 'grad_norm:', tensor(1.0986))
+fval before -1.4210854715202004e-17
+a/e/r 0.04109515142813723 0.04824445808834019 0.8518108204861188
+fval after -0.041095151428137244
+Episode 215	Average reward 916.54
+('lagrange multiplier:', tensor(2.3248), 'grad_norm:', tensor(0.9699))
+fval before -8.289665250534503e-18
+a/e/r 0.04117634705836699 0.04649613125422746 0.885586519730568
+fval after -0.041176347058366994
+Episode 216	Average reward 934.48
+('lagrange multiplier:', tensor(2.4579), 'grad_norm:', tensor(0.9389))
+fval before 2.3684757858670005e-18
+a/e/r 0.0396707638796698 0.04915853155139925 0.8069965197839725
+fval after -0.0396707638796698
+Episode 217	Average reward 939.75
+('lagrange multiplier:', tensor(2.3561), 'grad_norm:', tensor(0.8861))
+fval before 7.697546304067752e-18
+a/e/r 0.03920740456695694 0.04712217174909102 0.832037300312103
+fval after -0.039207404566956934
+Episode 218	Average reward 932.09
+('lagrange multiplier:', tensor(2.1483), 'grad_norm:', tensor(1.1872))
+fval before 5.921189464667502e-18
+a/e/r 0.03695889509051175 0.04296570049645914 0.8601953340329591
+fval after -0.03695889509051174
+Episode 219	Average reward 930.38
+('lagrange multiplier:', tensor(2.2624), 'grad_norm:', tensor(1.0410))
+fval before -1.4802973661668754e-17
+a/e/r 0.0383996324326301 0.0452479833076312 0.8486484838795876
+fval after -0.038399632432630115
+Episode 220	Average reward 939.44
+('lagrange multiplier:', tensor(2.4472), 'grad_norm:', tensor(0.8094))
+fval before -9.473903143468002e-18
+a/e/r 0.04187021347484974 0.048944935769269886 0.8554554790352383
+fval after -0.041870213474849746
+Episode 221	Average reward 948.09
+('lagrange multiplier:', tensor(2.1885), 'grad_norm:', tensor(0.7928))
+fval before 6.5133084111342516e-18
+a/e/r 0.03848750537679115 0.04376995494298688 0.8793133423811733
+fval after -0.038487505376791145
+Episode 222	Average reward 933.19
+('lagrange multiplier:', tensor(2.3875), 'grad_norm:', tensor(1.0527))
+fval before -1.4210854715202004e-17
+a/e/r 0.041486896427811025 0.047749925975731744 0.8688368741952852
+fval after -0.04148689642781104
+Episode 223	Average reward 896.13
+('lagrange multiplier:', tensor(2.2863), 'grad_norm:', tensor(0.8998))
+fval before 7.401486830834377e-18
+a/e/r 0.04000467700000689 0.04572533969547368 0.8748907556823886
+fval after -0.040004677000006886
+Episode 224	Average reward 969.64
+('lagrange multiplier:', tensor(2.0777), 'grad_norm:', tensor(0.8489))
+fval before -5.921189464667502e-18
+a/e/r 0.038197999238971804 0.04155436037753342 0.9192296281769686
+fval after -0.03819799923897181
+Episode 225	Average reward 923.57
+('lagrange multiplier:', tensor(2.0775), 'grad_norm:', tensor(1.0053))
+fval before 1.1842378929335003e-18
+a/e/r 0.037184452272401865 0.04155002997034163 0.8949320204809501
+fval after -0.037184452272401865
+Episode 226	Average reward 922.13
+('lagrange multiplier:', tensor(2.2111), 'grad_norm:', tensor(1.0364))
+fval before 3.552713678800501e-18
+a/e/r 0.0378044474587012 0.04422101269014999 0.8548978225259403
+fval after -0.03780444745870119
+Episode 227	Average reward 950.29
+('lagrange multiplier:', tensor(2.5224), 'grad_norm:', tensor(1.2920))
+fval before -4.736951571734001e-18
+a/e/r 0.042222716779624345 0.05044784461515061 0.8369577947626314
+fval after -0.04222271677962435
+Episode 228	Average reward 929.38
+('lagrange multiplier:', tensor(2.4704), 'grad_norm:', tensor(1.0441))
+fval before 5.921189464667501e-19
+a/e/r 0.04280498198693833 0.04940836571844899 0.8663508975556953
+fval after -0.04280498198693833
+Episode 229	Average reward 943.32
+('lagrange multiplier:', tensor(2.2397), 'grad_norm:', tensor(1.0231))
+fval before -2.3684757858670005e-18
+a/e/r 0.0387205198878604 0.04479400712812293 0.8644129509804577
+fval after -0.0387205198878604
+Episode 230	Average reward 947.01
+('lagrange multiplier:', tensor(2.2545), 'grad_norm:', tensor(0.8139))
+fval before -5.921189464667501e-19
+a/e/r 0.039156796501070665 0.04509065833509464 0.8684015258786858
+fval after -0.039156796501070665
+Episode 231	Average reward 938.35
+('lagrange multiplier:', tensor(2.1861), 'grad_norm:', tensor(0.8261))
+fval before 4.736951571734001e-18
+a/e/r 0.03914380145528748 0.0437228704116709 0.8952706235142069
+fval after -0.03914380145528747
+Episode 232	Average reward 964.37
+('lagrange multiplier:', tensor(2.3149), 'grad_norm:', tensor(0.9896))
+fval before 9.473903143468002e-18
+a/e/r 0.04002783053455968 0.046297186366052075 0.8645845174710343
+fval after -0.040027830534559675
+Episode 233	Average reward 977.44
+('lagrange multiplier:', tensor(2.1856), 'grad_norm:', tensor(0.8975))
+fval before 5.921189464667502e-18
+a/e/r 0.037086713983575915 0.043711181449071566 0.8484491325585903
+fval after -0.03708671398357591
+Episode 234	Average reward 970.83
+('lagrange multiplier:', tensor(2.3641), 'grad_norm:', tensor(0.9465))
+fval before 2.3684757858670005e-18
+a/e/r 0.03873144843711595 0.04728152453752843 0.8191666579273245
+fval after -0.03873144843711595
+Episode 235	Average reward 965.12
+('lagrange multiplier:', tensor(2.2011), 'grad_norm:', tensor(1.1668))
+fval before 0.0
+a/e/r 0.03760020110210657 0.04402215211242098 0.8541200122630436
+fval after -0.03760020110210657
+Episode 236	Average reward 966.04
+('lagrange multiplier:', tensor(2.2908), 'grad_norm:', tensor(1.1659))
+fval before 6.5133084111342516e-18
+a/e/r 0.03905080280125708 0.04581582600620456 0.8523430920129795
+fval after -0.03905080280125707
+Episode 237	Average reward 960.24
+('lagrange multiplier:', tensor(2.1185), 'grad_norm:', tensor(1.1393))
+fval before -1.3618735768735253e-17
+a/e/r 0.038062504193677606 0.04237014892079669 0.8983330283976239
+fval after -0.03806250419367762
+Episode 238	Average reward 945.92
+('lagrange multiplier:', tensor(2.4224), 'grad_norm:', tensor(1.0358))
+fval before 1.3618735768735253e-17
+a/e/r 0.041076275853133566 0.04844707209791915 0.8478587884549958
+fval after -0.04107627585313355
+Episode 239	Average reward 987.97
+('lagrange multiplier:', tensor(2.4459), 'grad_norm:', tensor(1.1163))
+fval before -9.473903143468002e-18
+a/e/r 0.040458902821211395 0.048917738736185455 0.8270803979596693
+fval after -0.0404589028212114
+Episode 240	Average reward 984.07
+('lagrange multiplier:', tensor(2.4548), 'grad_norm:', tensor(1.0372))
+fval before 3.552713678800501e-18
+a/e/r 0.040682587682209524 0.049096184388198245 0.82863033429516
+fval after -0.04068258768220952
+Episode 241	Average reward 944.23
+('lagrange multiplier:', tensor(2.3383), 'grad_norm:', tensor(1.0968))
+fval before 4.736951571734001e-18
+a/e/r 0.03888561243962689 0.04676513179795585 0.8315086677747078
+fval after -0.03888561243962688
+Episode 242	Average reward 967.27
+('lagrange multiplier:', tensor(2.4144), 'grad_norm:', tensor(1.1896))
+fval before -2.3684757858670005e-18
+a/e/r 0.03978336621254512 0.04828723300504162 0.8238899546882585
+fval after -0.03978336621254512
+Episode 243	Average reward 970.49
+('lagrange multiplier:', tensor(2.4328), 'grad_norm:', tensor(0.9700))
+fval before -7.105427357601002e-18
+a/e/r 0.0406107481902913 0.04865608415102816 0.8346489221005909
+fval after -0.040610748190291306
+Episode 244	Average reward 943.86
+('lagrange multiplier:', tensor(1.9712), 'grad_norm:', tensor(0.8641))
+fval before -8.289665250534503e-18
+a/e/r 0.035803140107291284 0.03942312119323038 0.9081761926409645
+fval after -0.03580314010729129
+Episode 245	Average reward 970.50
+('lagrange multiplier:', tensor(2.3445), 'grad_norm:', tensor(1.1358))
+fval before 4.736951571734001e-18
+a/e/r 0.03921249024042821 0.04689026703064219 0.8362607577986994
+fval after -0.0392124902404282
+Episode 246	Average reward 960.05
+('lagrange multiplier:', tensor(2.2497), 'grad_norm:', tensor(1.1898))
+fval before 1.2434497875801754e-17
+a/e/r 0.03784533916466278 0.0449943210572602 0.8411136844692121
+fval after -0.03784533916466277
+Episode 247	Average reward 997.85
+('lagrange multiplier:', tensor(2.4515), 'grad_norm:', tensor(1.0008))
+fval before -1.0658141036401503e-17
+a/e/r 0.04228017876312614 0.049029501721784434 0.8623415959444783
+fval after -0.042280178763126154
+Episode 248	Average reward 928.43
+('lagrange multiplier:', tensor(2.2989), 'grad_norm:', tensor(0.8511))
+fval before 6.5133084111342516e-18
+a/e/r 0.039003086451176235 0.04597875023793776 0.8482850501446253
+fval after -0.03900308645117623
+Episode 249	Average reward 991.70
+('lagrange multiplier:', tensor(2.4142), 'grad_norm:', tensor(1.1252))
+fval before 2.960594732333751e-18
+a/e/r 0.04042693187787547 0.04828368915053954 0.8372792673698117
+fval after -0.04042693187787547
+Episode 250	Average reward 974.64
+('lagrange multiplier:', tensor(2.1099), 'grad_norm:', tensor(0.8601))
+fval before -5.3290705182007515e-18
+a/e/r 0.035726607219725065 0.04219734501222878 0.846655333632282
+fval after -0.03572660721972507
+Episode 251	Average reward 988.46
+('lagrange multiplier:', tensor(2.2643), 'grad_norm:', tensor(1.2790))
+fval before -4.1448326252672514e-18
+a/e/r 0.04039795462813376 0.0452868028130032 0.8920469567026775
+fval after -0.04039795462813377
+Episode 252	Average reward 965.52
+('lagrange multiplier:', tensor(2.4704), 'grad_norm:', tensor(1.0720))
+fval before -2.960594732333751e-18
+a/e/r 0.03924215825429946 0.049408909920990625 0.7942324232016305
+fval after -0.03924215825429946
+Episode 253	Average reward 961.32
+('lagrange multiplier:', tensor(2.0953), 'grad_norm:', tensor(0.9083))
+fval before 2.7237471537470506e-17
+a/e/r 0.03746013663857743 0.04190683635115145 0.8938908278517226
+fval after -0.037460136638577404
+Episode 254	Average reward 1014.13
+('lagrange multiplier:', tensor(1.9840), 'grad_norm:', tensor(0.9897))
+fval before -6.5133084111342516e-18
+a/e/r 0.03510326329146897 0.03968002803208932 0.8846582281413936
+fval after -0.03510326329146898
+Episode 255	Average reward 1003.49
+('lagrange multiplier:', tensor(2.6154), 'grad_norm:', tensor(1.3044))
+fval before 0.0
+a/e/r 0.04400363743552125 0.05230848364068507 0.8412332832622128
+fval after -0.04400363743552125
+Episode 256	Average reward 969.65
+('lagrange multiplier:', tensor(2.3163), 'grad_norm:', tensor(0.9712))
+fval before 4.1448326252672514e-18
+a/e/r 0.04063053212189145 0.046326673990428224 0.8770440142170862
+fval after -0.040630532121891445
+Episode 257	Average reward 987.19
+('lagrange multiplier:', tensor(2.2474), 'grad_norm:', tensor(0.9950))
+fval before -2.960594732333751e-18
+a/e/r 0.03726536589576746 0.04494743470763875 0.8290877140855888
+fval after -0.03726536589576746
+Episode 258	Average reward 1020.17
+('lagrange multiplier:', tensor(2.1154), 'grad_norm:', tensor(0.9207))
+fval before -1.1842378929335003e-18
+a/e/r 0.03788568312444587 0.04230840823070605 0.895464630053127
+fval after -0.03788568312444587
+Episode 259	Average reward 998.49
+('lagrange multiplier:', tensor(2.1303), 'grad_norm:', tensor(0.9986))
+fval before 0.0
+a/e/r 0.03774849516933411 0.04260606935638318 0.8859886804760759
+fval after -0.03774849516933411
+Episode 260	Average reward 1021.58
+('lagrange multiplier:', tensor(2.1424), 'grad_norm:', tensor(0.8319))
+fval before -2.960594732333751e-18
+a/e/r 0.03756051089327066 0.04284828004203282 0.8765931994568971
+fval after -0.03756051089327066
+Episode 261	Average reward 993.88
+('lagrange multiplier:', tensor(2.3320), 'grad_norm:', tensor(0.9731))
+fval before -8.289665250534503e-18
+a/e/r 0.038440748641416486 0.04663959425905298 0.8242084703375168
+fval after -0.03844074864141649
+Episode 262	Average reward 1003.30
+('lagrange multiplier:', tensor(2.2921), 'grad_norm:', tensor(0.7650))
+fval before -8.289665250534503e-18
+a/e/r 0.039275498923577526 0.04584186790627996 0.8567604401258943
+fval after -0.03927549892357753
+Episode 263	Average reward 997.06
+('lagrange multiplier:', tensor(2.0668), 'grad_norm:', tensor(1.1519))
+fval before -4.736951571734001e-18
+a/e/r 0.03534006900902819 0.041335265312120645 0.854961707447067
+fval after -0.0353400690090282
+Episode 264	Average reward 986.56
+('lagrange multiplier:', tensor(2.1875), 'grad_norm:', tensor(0.9696))
+fval before 6.5133084111342516e-18
+a/e/r 0.037323536737477736 0.04375059349059261 0.8530978384442524
+fval after -0.03732353673747773
+Episode 265	Average reward 1002.36
+('lagrange multiplier:', tensor(2.2840), 'grad_norm:', tensor(1.0598))
+fval before 1.7763568394002505e-18
+a/e/r 0.04086181942833116 0.04568043572713523 0.8945146598953806
+fval after -0.04086181942833116
+Episode 266	Average reward 958.39
+('lagrange multiplier:', tensor(2.3095), 'grad_norm:', tensor(0.9617))
+fval before -1.4506914188435377e-17
+a/e/r 0.03987288211272442 0.04619030483887304 0.8632305470122817
+fval after -0.03987288211272443
+Episode 267	Average reward 981.36
+('lagrange multiplier:', tensor(2.9985), 'grad_norm:', tensor(1.3545))
+fval before -3.552713678800501e-18
+a/e/r 0.04112430329892391 0.059969580522080713 0.685752725646997
+fval after -0.041124303298923914
+Episode 268	Average reward 983.60
+('lagrange multiplier:', tensor(2.1998), 'grad_norm:', tensor(1.1872))
+fval before -3.552713678800501e-18
+a/e/r 0.037432869535454605 0.043996212594574875 0.8508202712901339
+fval after -0.03743286953545461
+Episode 269	Average reward 983.74
+('lagrange multiplier:', tensor(2.1514), 'grad_norm:', tensor(1.2434))
+fval before -1.3026616822268503e-17
+a/e/r 0.03678076608055745 0.0430276404192 0.8548171761736895
+fval after -0.03678076608055746
+Episode 270	Average reward 996.54
+('lagrange multiplier:', tensor(2.3274), 'grad_norm:', tensor(0.9421))
+fval before -5.3290705182007515e-18
+a/e/r 0.040198982066406784 0.04654758605497809 0.8636104570262167
+fval after -0.04019898206640679
+Episode 271	Average reward 985.40
+('lagrange multiplier:', tensor(2.2578), 'grad_norm:', tensor(1.2861))
+fval before -1.3618735768735253e-17
+a/e/r 0.038837980896108494 0.04515667347201285 0.8600717880642704
+fval after -0.03883798089610851
+Episode 272	Average reward 992.66
+('lagrange multiplier:', tensor(2.4648), 'grad_norm:', tensor(0.9588))
+fval before 1.1250259982868253e-17
+a/e/r 0.04149656011889369 0.04929580026779352 0.8417869249199447
+fval after -0.041496560118893674
+Episode 273	Average reward 1020.24
+('lagrange multiplier:', tensor(2.0510), 'grad_norm:', tensor(1.0674))
+fval before 0.0
+a/e/r 0.0364444465268992 0.04102009495923043 0.8884534900058391
+fval after -0.0364444465268992
+Episode 274	Average reward 1003.86
+('lagrange multiplier:', tensor(2.1582), 'grad_norm:', tensor(0.9941))
+fval before 4.1448326252672514e-18
+a/e/r 0.037383153078519825 0.043164760929030016 0.8660572252440802
+fval after -0.03738315307851982
+Episode 275	Average reward 1023.94
+('lagrange multiplier:', tensor(2.1951), 'grad_norm:', tensor(1.0257))
+fval before 1.7763568394002505e-17
+a/e/r 0.038820414793955496 0.0439017239080996 0.8842571848708968
+fval after -0.038820414793955475
+Episode 276	Average reward 985.19
+('lagrange multiplier:', tensor(2.2810), 'grad_norm:', tensor(1.0526))
+fval before -9.473903143468002e-18
+a/e/r 0.03932003701210943 0.04561902670962269 0.8619218744492728
+fval after -0.039320037012109434
+Episode 277	Average reward 997.42
+('lagrange multiplier:', tensor(2.4008), 'grad_norm:', tensor(1.1080))
+fval before -1.4802973661668755e-18
+a/e/r 0.04035419405451814 0.048015638327046174 0.840438562529481
+fval after -0.04035419405451814
+Episode 278	Average reward 1010.06
+('lagrange multiplier:', tensor(2.3121), 'grad_norm:', tensor(1.2547))
+fval before 3.552713678800501e-18
+a/e/r 0.03968720178057405 0.04624209833139266 0.858248289170549
+fval after -0.03968720178057404
+Episode 279	Average reward 1019.34
+('lagrange multiplier:', tensor(1.9229), 'grad_norm:', tensor(0.9029))
+fval before 9.473903143468002e-18
+a/e/r 0.034236540697051336 0.03845829081936567 0.8902252275811364
+fval after -0.03423654069705133
+Episode 280	Average reward 1015.32
+('lagrange multiplier:', tensor(2.1357), 'grad_norm:', tensor(1.0140))
+fval before -3.552713678800501e-18
+a/e/r 0.036296853293777 0.04271405496604126 0.8497636977485257
+fval after -0.03629685329377701
+Episode 281	Average reward 1009.39
+('lagrange multiplier:', tensor(2.3859), 'grad_norm:', tensor(1.1394))
+fval before 1.7763568394002505e-18
+a/e/r 0.04247348170480824 0.047718921817675064 0.8900763069855464
+fval after -0.04247348170480824
+Episode 282	Average reward 1006.87
+('lagrange multiplier:', tensor(2.1206), 'grad_norm:', tensor(1.0642))
+fval before 2.3684757858670005e-18
+a/e/r 0.03689497497695811 0.04241231316359233 0.869911877587228
+fval after -0.03689497497695811
+Episode 283	Average reward 996.33
+('lagrange multiplier:', tensor(2.4310), 'grad_norm:', tensor(1.1278))
+fval before 1.8355687340469255e-17
+a/e/r 0.03985248442973406 0.04862070333968253 0.8196607965810285
+fval after -0.03985248442973404
+Episode 284	Average reward 1054.88
+('lagrange multiplier:', tensor(2.0872), 'grad_norm:', tensor(1.0567))
+fval before -1.1842378929335003e-18
+a/e/r 0.03609023237522267 0.0417430147223713 0.8645813584681239
+fval after -0.03609023237522267
+Episode 285	Average reward 1002.78
+('lagrange multiplier:', tensor(2.2233), 'grad_norm:', tensor(1.1711))
+fval before -2.960594732333751e-18
+a/e/r 0.03937748176259845 0.04446549054426468 0.8855739873913862
+fval after -0.03937748176259845
+Episode 286	Average reward 994.28
+('lagrange multiplier:', tensor(2.2080), 'grad_norm:', tensor(1.1210))
+fval before 1.1842378929335003e-18
+a/e/r 0.03819461652307733 0.04416090168907589 0.8648966633877758
+fval after -0.03819461652307733
+Episode 287	Average reward 1007.44
+('lagrange multiplier:', tensor(2.1762), 'grad_norm:', tensor(0.8473))
+fval before 0.0
+a/e/r 0.03735870386638461 0.04352473002065762 0.8583328109939682
+fval after -0.03735870386638461
+Episode 288	Average reward 1012.49
+('lagrange multiplier:', tensor(2.2724), 'grad_norm:', tensor(1.0915))
+fval before -4.736951571734001e-18
+a/e/r 0.03845102253148633 0.045447336776993856 0.8460566725870465
+fval after -0.038451022531486335
+Episode 289	Average reward 1008.36
+('lagrange multiplier:', tensor(2.5268), 'grad_norm:', tensor(1.4287))
+fval before 1.3618735768735253e-17
+a/e/r 0.04355124640429848 0.05053517741989712 0.861800603615792
+fval after -0.043551246404298465
+Episode 290	Average reward 990.78
+('lagrange multiplier:', tensor(2.4956), 'grad_norm:', tensor(1.1411))
+fval before -7.105427357601002e-18
+a/e/r 0.042490476501987805 0.04991179131466549 0.8513113912123387
+fval after -0.04249047650198781
+Episode 291	Average reward 985.36
+('lagrange multiplier:', tensor(2.4456), 'grad_norm:', tensor(1.6954))
+fval before -3.552713678800501e-18
+a/e/r 0.04149118460882056 0.04891217766983848 0.8482792340363523
+fval after -0.041491184608820564
+Episode 292	Average reward 1025.78
+('lagrange multiplier:', tensor(2.1982), 'grad_norm:', tensor(1.2739))
+fval before -1.1842378929335003e-18
+a/e/r 0.037481700066674624 0.04396431126297533 0.8525483281763576
+fval after -0.037481700066674624
+Episode 293	Average reward 1000.84
+('lagrange multiplier:', tensor(2.3949), 'grad_norm:', tensor(1.0500))
+fval before 2.3684757858670005e-18
+a/e/r 0.040007458301386495 0.04789714426194385 0.8352785728224299
+fval after -0.040007458301386495
+Episode 294	Average reward 1037.29
+('lagrange multiplier:', tensor(2.2841), 'grad_norm:', tensor(1.3138))
+fval before -1.1842378929335003e-18
+a/e/r 0.03942316912622195 0.045682194777751386 0.8629876326656316
+fval after -0.03942316912622195
+Episode 295	Average reward 1034.66
+('lagrange multiplier:', tensor(2.4139), 'grad_norm:', tensor(1.1056))
+fval before -1.1842378929335004e-17
+a/e/r 0.04120484954058721 0.04827888025499225 0.8534756672681206
+fval after -0.04120484954058722
+Episode 296	Average reward 1014.00
+('lagrange multiplier:', tensor(2.3622), 'grad_norm:', tensor(1.3167))
+fval before 2.1908401019269756e-17
+a/e/r 0.04025400589247831 0.04724458245675162 0.8520343243445406
+fval after -0.04025400589247829
+Episode 297	Average reward 1052.30
+('lagrange multiplier:', tensor(2.1415), 'grad_norm:', tensor(1.0785))
+fval before -2.0132044179869507e-17
+a/e/r 0.037090553393344036 0.04283063469251305 0.8659818762813617
+fval after -0.03709055339334406
+Episode 298	Average reward 998.49
+('lagrange multiplier:', tensor(2.2554), 'grad_norm:', tensor(1.3608))
+fval before 1.0066022089934753e-17
+a/e/r 0.038393049637901626 0.04510709888137022 0.8511531574857816
+fval after -0.03839304963790162
+Episode 299	Average reward 1062.69
+('lagrange multiplier:', tensor(2.0798), 'grad_norm:', tensor(1.1267))
+fval before -9.473903143468002e-18
+a/e/r 0.03736535896301463 0.04159615007104083 0.8982888776773678
+fval after -0.037365358963014635
+Episode 300	Average reward 1073.03
+('lagrange multiplier:', tensor(2.1874), 'grad_norm:', tensor(1.3320))
+fval before 2.1316282072803006e-17
+a/e/r 0.03851803618716571 0.043748261116954415 0.8804472498733954
+fval after -0.03851803618716569
+Episode 301	Average reward 992.65
+('lagrange multiplier:', tensor(2.0720), 'grad_norm:', tensor(1.0728))
+fval before -8.881784197001253e-18
+a/e/r 0.03441346157758345 0.04143902836289327 0.8304601468020693
+fval after -0.03441346157758346
+Episode 302	Average reward 1027.31
+('lagrange multiplier:', tensor(2.3923), 'grad_norm:', tensor(1.0854))
+fval before 6.5133084111342516e-18
+a/e/r 0.040263168519765996 0.04784625727893506 0.8415113492585006
+fval after -0.04026316851976599
+Episode 303	Average reward 1036.90
+('lagrange multiplier:', tensor(2.3767), 'grad_norm:', tensor(1.4293))
+fval before -1.6579330501069006e-17
+a/e/r 0.04047444008607224 0.04753340534602013 0.8514946444808226
+fval after -0.040474440086072254
+Episode 304	Average reward 1024.06
+('lagrange multiplier:', tensor(2.2676), 'grad_norm:', tensor(1.3779))
+fval before 4.736951571734001e-18
+a/e/r 0.03916563600828766 0.04535189290707612 0.8635942955795956
+fval after -0.03916563600828765
+Episode 305	Average reward 1003.96
+('lagrange multiplier:', tensor(2.4185), 'grad_norm:', tensor(1.5044))
+fval before 0.0
+a/e/r 0.04110427095876791 0.04836989351030524 0.8497903959621209
+fval after -0.04110427095876791
+Episode 306	Average reward 1021.29
+('lagrange multiplier:', tensor(2.3940), 'grad_norm:', tensor(1.0527))
+fval before -5.921189464667501e-19
+a/e/r 0.04149783114685414 0.04788030816166646 0.8666993329854504
+fval after -0.04149783114685414
+Episode 307	Average reward 1012.39
+('lagrange multiplier:', tensor(2.3048), 'grad_norm:', tensor(1.1665))
+fval before -5.3290705182007515e-18
+a/e/r 0.039776776908759644 0.04609579030063751 0.8629156078968349
+fval after -0.03977677690875965
+Episode 308	Average reward 1023.63
+('lagrange multiplier:', tensor(2.2754), 'grad_norm:', tensor(1.2821))
+fval before 6.5133084111342516e-18
+a/e/r 0.03778589521947373 0.04550753240527351 0.8303217780073485
+fval after -0.037785895219473724
+Episode 309	Average reward 1019.71
+('lagrange multiplier:', tensor(2.1359), 'grad_norm:', tensor(0.9952))
+fval before -1.1842378929335003e-18
+a/e/r 0.0363568830928455 0.04271862973145415 0.8510779330095312
+fval after -0.0363568830928455
+Episode 310	Average reward 1025.15
+('lagrange multiplier:', tensor(2.2346), 'grad_norm:', tensor(1.2931))
+fval before -1.7763568394002505e-18
+a/e/r 0.038779901966645755 0.044692095982724084 0.8677127602526471
+fval after -0.038779901966645755
+Episode 311	Average reward 1028.57
+('lagrange multiplier:', tensor(2.0337), 'grad_norm:', tensor(1.2090))
+fval before 1.0066022089934753e-17
+a/e/r 0.036187938564951304 0.04067313196804714 0.8897258906292388
+fval after -0.0361879385649513
+Episode 312	Average reward 1022.18
+('lagrange multiplier:', tensor(2.1871), 'grad_norm:', tensor(0.9180))
+fval before -2.3684757858670005e-18
+a/e/r 0.03586746074696977 0.04374293823487982 0.8199600254189078
+fval after -0.03586746074696977
+Episode 313	Average reward 1019.35
+('lagrange multiplier:', tensor(2.2544), 'grad_norm:', tensor(0.9599))
+fval before -9.473903143468002e-18
+a/e/r 0.038642441756839 0.04508879582048598 0.8570298020529948
+fval after -0.03864244175683901
+Episode 314	Average reward 1019.12
+('lagrange multiplier:', tensor(2.4712), 'grad_norm:', tensor(1.0732))
+fval before -7.105427357601002e-18
+a/e/r 0.03907537550455422 0.04942461757710341 0.7906055204897809
+fval after -0.03907537550455423
+Episode 315	Average reward 1009.00
+('lagrange multiplier:', tensor(2.1011), 'grad_norm:', tensor(1.2220))
+fval before -9.473903143468002e-18
+a/e/r 0.037029632871349014 0.04202254924363105 0.8811848290465442
+fval after -0.03702963287134902
+Episode 316	Average reward 1056.88
+('lagrange multiplier:', tensor(2.5729), 'grad_norm:', tensor(1.6722))
+fval before 0.0
+a/e/r 0.040160061035097 0.0514589257799931 0.7804294478823142
+fval after -0.040160061035097
+Episode 317	Average reward 1001.76
+('lagrange multiplier:', tensor(2.3898), 'grad_norm:', tensor(1.3133))
+fval before -7.697546304067752e-18
+a/e/r 0.04181822591791674 0.047796930699976585 0.8749144621944779
+fval after -0.04181822591791675
+Episode 318	Average reward 1032.95
+('lagrange multiplier:', tensor(2.5410), 'grad_norm:', tensor(1.4362))
+fval before -1.2434497875801754e-17
+a/e/r 0.04063353063329927 0.05082077805926831 0.7995456225780635
+fval after -0.04063353063329928
+Episode 319	Average reward 1008.57
+('lagrange multiplier:', tensor(2.3816), 'grad_norm:', tensor(1.5908))
+fval before 5.3290705182007515e-18
+a/e/r 0.04097669659581813 0.047631110639400946 0.8602926962177906
+fval after -0.040976696595818124
+Episode 320	Average reward 1043.77
+('lagrange multiplier:', tensor(2.0189), 'grad_norm:', tensor(0.8841))
+fval before 0.0
+a/e/r 0.035774364093121104 0.040377182761521045 0.8860044620847998
+fval after -0.035774364093121104
+Episode 321	Average reward 1040.50
+('lagrange multiplier:', tensor(2.0686), 'grad_norm:', tensor(0.9681))
+fval before 0.0
+a/e/r 0.03578036204038801 0.04137219940025803 0.8648407036384159
+fval after -0.03578036204038801
+Episode 322	Average reward 1055.65
+('lagrange multiplier:', tensor(2.0664), 'grad_norm:', tensor(1.1683))
+fval before -1.1842378929335003e-18
+a/e/r 0.0359364082718494 0.04132897091497334 0.869521003699363
+fval after -0.0359364082718494
+Episode 323	Average reward 1047.63
+('lagrange multiplier:', tensor(2.5117), 'grad_norm:', tensor(1.1957))
+fval before -1.0066022089934753e-17
+a/e/r 0.04404293224071992 0.05023448459454578 0.8767469716510617
+fval after -0.04404293224071993
+Episode 324	Average reward 957.41
+('lagrange multiplier:', tensor(2.2199), 'grad_norm:', tensor(1.1089))
+fval before -8.289665250534503e-18
+a/e/r 0.039264403528883336 0.044397156265858696 0.8843900562855996
+fval after -0.03926440352888334
+Episode 325	Average reward 1068.10
+('lagrange multiplier:', tensor(2.2870), 'grad_norm:', tensor(1.1933))
+fval before 1.1842378929335003e-18
+a/e/r 0.03913095229568738 0.04573914296715261 0.8555243880233856
+fval after -0.03913095229568738
+Episode 326	Average reward 1014.54
+('lagrange multiplier:', tensor(2.2641), 'grad_norm:', tensor(1.0452))
+fval before 5.3290705182007515e-18
+a/e/r 0.038174849099167615 0.045282123842464786 0.8430445805054733
+fval after -0.03817484909916761
+Episode 327	Average reward 1038.74
+('lagrange multiplier:', tensor(2.1666), 'grad_norm:', tensor(1.4500))
+fval before 1.8355687340469255e-17
+a/e/r 0.03596688892717228 0.0433317839426297 0.8300348071242952
+fval after -0.03596688892717226
+Episode 328	Average reward 1058.93
+('lagrange multiplier:', tensor(2.5114), 'grad_norm:', tensor(1.5370))
+fval before 2.3684757858670005e-18
+a/e/r 0.040646967129692776 0.05022780943606575 0.8092522366803934
+fval after -0.040646967129692776
+Episode 329	Average reward 1038.82
+('lagrange multiplier:', tensor(2.1513), 'grad_norm:', tensor(1.2828))
+fval before -8.881784197001253e-18
+a/e/r 0.03804045194656964 0.04302592793063477 0.8841285656383151
+fval after -0.038040451946569645
+Episode 330	Average reward 1063.72
+('lagrange multiplier:', tensor(2.2883), 'grad_norm:', tensor(1.1726))
+fval before 1.1842378929335003e-18
+a/e/r 0.038015130067911476 0.045765455869591645 0.8306511832032293
+fval after -0.038015130067911476
+Episode 331	Average reward 1042.70
+('lagrange multiplier:', tensor(2.2425), 'grad_norm:', tensor(1.3178))
+fval before 1.1842378929335003e-18
+a/e/r 0.03685100029000185 0.04485066051921438 0.8216378502210595
+fval after -0.03685100029000185
+Episode 332	Average reward 1034.78
+('lagrange multiplier:', tensor(2.1779), 'grad_norm:', tensor(0.9793))
+fval before -4.736951571734001e-18
+a/e/r 0.0375741310319218 0.04355702602501518 0.8626422522589731
+fval after -0.03757413103192181
+Episode 333	Average reward 992.48
+('lagrange multiplier:', tensor(2.2158), 'grad_norm:', tensor(0.9343))
+fval before -5.921189464667501e-19
+a/e/r 0.040078581788413364 0.04431612475541463 0.9043792075595799
+fval after -0.040078581788413364
+Episode 334	Average reward 1037.54
+('lagrange multiplier:', tensor(2.2876), 'grad_norm:', tensor(1.0827))
+fval before 0.0
+a/e/r 0.039825280508376075 0.04575282973953144 0.8704440957007337
+fval after -0.039825280508376075
+Episode 335	Average reward 1057.87
+('lagrange multiplier:', tensor(2.5965), 'grad_norm:', tensor(1.3447))
+fval before -1.3026616822268503e-17
+a/e/r 0.04244707747378515 0.05192930606641548 0.81740120731629
+fval after -0.042447077473785164
+Episode 336	Average reward 1068.86
+('lagrange multiplier:', tensor(2.2773), 'grad_norm:', tensor(1.3148))
+fval before 2.960594732333751e-18
+a/e/r 0.03885193410652101 0.04554644178844665 0.8530179873760463
+fval after -0.03885193410652101
+Episode 337	Average reward 1058.12
+('lagrange multiplier:', tensor(2.3793), 'grad_norm:', tensor(1.4667))
+fval before 1.3618735768735253e-17
+a/e/r 0.0385775261206313 0.04758507159920534 0.81070648470508
+fval after -0.038577526120631284
+Episode 338	Average reward 1047.19
+('lagrange multiplier:', tensor(2.3088), 'grad_norm:', tensor(1.2018))
+fval before 5.921189464667502e-18
+a/e/r 0.040654342695897565 0.04617541617886768 0.8804326210816731
+fval after -0.04065434269589756
+Episode 339	Average reward 1044.35
+('lagrange multiplier:', tensor(2.2848), 'grad_norm:', tensor(1.3474))
+fval before 1.3618735768735253e-17
+a/e/r 0.04047013797259466 0.045696438033445606 0.8856300340734267
+fval after -0.04047013797259465
+Episode 340	Average reward 1011.75
+('lagrange multiplier:', tensor(2.2279), 'grad_norm:', tensor(1.4607))
+fval before 8.289665250534503e-18
+a/e/r 0.04033946177205064 0.04455767050091643 0.9053314798227832
+fval after -0.04033946177205063
+Episode 341	Average reward 1050.80
+('lagrange multiplier:', tensor(2.1485), 'grad_norm:', tensor(1.1015))
+fval before 0.0
+a/e/r 0.03880597010330277 0.042970784002493545 0.9030780099579031
+fval after -0.03880597010330277
+Episode 342	Average reward 1056.33
+('lagrange multiplier:', tensor(2.3579), 'grad_norm:', tensor(1.0900))
+fval before -3.552713678800501e-18
+a/e/r 0.03999061597650794 0.04715839552045193 0.8480062889155033
+fval after -0.039990615976507944
+Episode 343	Average reward 1060.89
+('lagrange multiplier:', tensor(2.6838), 'grad_norm:', tensor(1.5150))
+fval before 3.552713678800501e-18
+a/e/r 0.043515974193105274 0.05367678370255137 0.8107038311804973
+fval after -0.04351597419310527
+Episode 344	Average reward 1035.43
+('lagrange multiplier:', tensor(2.6151), 'grad_norm:', tensor(1.1276))
+fval before -4.736951571734001e-18
+a/e/r 0.042819477015168285 0.05230259122731387 0.8186874877588619
+fval after -0.04281947701516829
+Episode 345	Average reward 1034.28
+('lagrange multiplier:', tensor(2.3669), 'grad_norm:', tensor(1.6961))
+fval before -3.2566542055671258e-18
+a/e/r 0.040815488317167074 0.04733731326816671 0.8622265502468764
+fval after -0.040815488317167074
+Episode 346	Average reward 1020.20
+('lagrange multiplier:', tensor(2.2503), 'grad_norm:', tensor(1.2594))
+fval before 1.3618735768735253e-17
+a/e/r 0.04073763338875949 0.045005020788831625 0.9051797482753053
+fval after -0.04073763338875948
+Episode 347	Average reward 1069.81
+('lagrange multiplier:', tensor(2.4571), 'grad_norm:', tensor(1.6717))
+fval before -1.4210854715202004e-17
+a/e/r 0.040048977694475164 0.04914178669409788 0.8149678794500405
+fval after -0.04004897769447518
+Episode 348	Average reward 1087.01
+('lagrange multiplier:', tensor(2.0824), 'grad_norm:', tensor(1.2262))
+fval before -7.105427357601002e-18
+a/e/r 0.03620740566195277 0.04164805992866894 0.8693659614389136
+fval after -0.036207405661952775
+Episode 349	Average reward 1078.68
+('lagrange multiplier:', tensor(2.4449), 'grad_norm:', tensor(1.3497))
+fval before 8.881784197001253e-18
+a/e/r 0.04185367107063152 0.048898311683478725 0.8559328457299809
+fval after -0.04185367107063151
+Episode 350	Average reward 1069.07
+('lagrange multiplier:', tensor(2.9318), 'grad_norm:', tensor(1.5157))
+fval before 1.8059627867235878e-17
+a/e/r 0.04720997997818454 0.05863686350506453 0.8051245778878838
+fval after -0.04720997997818452
+Episode 351	Average reward 1038.83
+('lagrange multiplier:', tensor(2.3509), 'grad_norm:', tensor(1.3983))
+fval before 4.1448326252672514e-18
+a/e/r 0.04063724694463992 0.04701765196721242 0.8642976678839289
+fval after -0.04063724694463991
+Episode 352	Average reward 1066.06
+('lagrange multiplier:', tensor(2.3115), 'grad_norm:', tensor(1.4079))
+fval before 8.289665250534503e-18
+a/e/r 0.04069786412199338 0.04622921495424624 0.8803494535278757
+fval after -0.040697864121993374
+Episode 353	Average reward 1070.17
+('lagrange multiplier:', tensor(2.2324), 'grad_norm:', tensor(1.1355))
+fval before 6.5133084111342516e-18
+a/e/r 0.037437765017766855 0.04464706294599327 0.838526938783251
+fval after -0.03743776501776685
+Episode 354	Average reward 1111.02
+('lagrange multiplier:', tensor(2.2570), 'grad_norm:', tensor(1.1699))
+fval before 8.881784197001253e-18
+a/e/r 0.038624663280828274 0.04513901007884989 0.8556825507107444
+fval after -0.03862466328082827
+Episode 355	Average reward 1083.13
+('lagrange multiplier:', tensor(2.1934), 'grad_norm:', tensor(1.1809))
+fval before -4.736951571734001e-18
+a/e/r 0.03599965113352594 0.04386827811252873 0.8206305941888447
+fval after -0.03599965113352595
+Episode 356	Average reward 1084.06
+('lagrange multiplier:', tensor(2.4648), 'grad_norm:', tensor(1.5903))
+fval before 1.3026616822268503e-17
+a/e/r 0.041793347482423 0.04929676955182234 0.8477907956724932
+fval after -0.041793347482422985
+Episode 357	Average reward 1085.93
+('lagrange multiplier:', tensor(2.4651), 'grad_norm:', tensor(1.2716))
+fval before 1.1842378929335003e-18
+a/e/r 0.04382319868303181 0.04930287539594225 0.8888568532990385
+fval after -0.04382319868303181
+Episode 358	Average reward 1065.29
+('lagrange multiplier:', tensor(2.0608), 'grad_norm:', tensor(1.4784))
+fval before -2.3684757858670005e-18
+a/e/r 0.036188983646785064 0.041215641493831986 0.878040043418973
+fval after -0.036188983646785064
+Episode 359	Average reward 1091.22
+('lagrange multiplier:', tensor(2.7043), 'grad_norm:', tensor(1.1186))
+fval before 1.1842378929335003e-18
+a/e/r 0.04183703147924036 0.05408612102863368 0.7735261964357077
+fval after -0.04183703147924036
+Episode 360	Average reward 1088.07
+('lagrange multiplier:', tensor(2.4650), 'grad_norm:', tensor(1.0925))
+fval before 1.0066022089934753e-17
+a/e/r 0.041063193440418255 0.04929925115173919 0.832937468239203
+fval after -0.04106319344041825
+Episode 361	Average reward 1077.81
+('lagrange multiplier:', tensor(1.9706), 'grad_norm:', tensor(1.1825))
+fval before 1.1842378929335003e-18
+a/e/r 0.034867314015467214 0.03941233101725313 0.8846803301282461
+fval after -0.034867314015467214
+Episode 362	Average reward 1081.99
+('lagrange multiplier:', tensor(2.1972), 'grad_norm:', tensor(1.8616))
+fval before 0.0
+a/e/r 0.03656126777244991 0.04394463758588161 0.8319847376371627
+fval after -0.03656126777244991
+Episode 363	Average reward 1089.76
+('lagrange multiplier:', tensor(2.0116), 'grad_norm:', tensor(1.3934))
+fval before -1.1842378929335003e-18
+a/e/r 0.03510161930420272 0.04023120833818603 0.8724972665284206
+fval after -0.03510161930420272
+Episode 364	Average reward 1088.49
+('lagrange multiplier:', tensor(2.3682), 'grad_norm:', tensor(1.3161))
+fval before -5.921189464667502e-18
+a/e/r 0.03726667964401161 0.047363438517923094 0.7868237782168053
+fval after -0.03726667964401162
+Episode 365	Average reward 1077.85
+('lagrange multiplier:', tensor(2.3726), 'grad_norm:', tensor(1.1632))
+fval before -3.552713678800501e-18
+a/e/r 0.03905766831511231 0.04745157389858092 0.8231058552154865
+fval after -0.039057668315112315
+Episode 366	Average reward 1083.29
+('lagrange multiplier:', tensor(2.5636), 'grad_norm:', tensor(1.4296))
+fval before -1.0658141036401503e-17
+a/e/r 0.044706836004334886 0.05127186348810321 0.8719565266963306
+fval after -0.0447068360043349
+Episode 367	Average reward 1093.47
+('lagrange multiplier:', tensor(1.8956), 'grad_norm:', tensor(1.1374))
+fval before -5.921189464667502e-18
+a/e/r 0.033887078700351604 0.03791230413516533 0.8938279926099202
+fval after -0.03388707870035161
+Episode 368	Average reward 1118.90
+('lagrange multiplier:', tensor(2.3955), 'grad_norm:', tensor(1.1365))
+fval before 0.0
+a/e/r 0.04005495004722385 0.04790960939373257 0.8360525279603667
+fval after -0.04005495004722385
+Episode 369	Average reward 1089.11
+('lagrange multiplier:', tensor(2.3912), 'grad_norm:', tensor(1.5292))
+fval before 7.697546304067752e-18
+a/e/r 0.040086259228252055 0.04782345284100658 0.838213404655713
+fval after -0.04008625922825205
+Episode 370	Average reward 1112.84
+('lagrange multiplier:', tensor(2.3459), 'grad_norm:', tensor(1.3917))
+fval before 5.921189464667501e-19
+a/e/r 0.03945788699387509 0.04691713901406301 0.8410122147910154
+fval after -0.03945788699387509
+Episode 371	Average reward 1113.36
+('lagrange multiplier:', tensor(2.1281), 'grad_norm:', tensor(1.3181))
+fval before -2.3684757858670005e-18
+a/e/r 0.03691073656678141 0.04256217149615962 0.8672192998919678
+fval after -0.03691073656678141
+Episode 372	Average reward 1100.33
+('lagrange multiplier:', tensor(2.4622), 'grad_norm:', tensor(1.6788))
+fval before 1.0658141036401503e-17
+a/e/r 0.04039433728366576 0.049243947302946324 0.8202904010753199
+fval after -0.040394337283665746
+Episode 373	Average reward 1089.53
+('lagrange multiplier:', tensor(1.8161), 'grad_norm:', tensor(1.2701))
+fval before 1.0658141036401503e-17
+a/e/r 0.032434443151166344 0.036322161979445926 0.8929656546744223
+fval after -0.03243444315116633
+Episode 374	Average reward 1132.21
+('lagrange multiplier:', tensor(2.3640), 'grad_norm:', tensor(1.7288))
+fval before -1.1842378929335003e-18
+a/e/r 0.03859370549125578 0.04727934030745688 0.8162911165909138
+fval after -0.03859370549125578
+Episode 375	Average reward 1098.15
+('lagrange multiplier:', tensor(2.1548), 'grad_norm:', tensor(1.3491))
+fval before -1.3026616822268503e-17
+a/e/r 0.03788241459054702 0.043096101467284695 0.8790218442219069
+fval after -0.03788241459054703
+Episode 376	Average reward 1095.33
+('lagrange multiplier:', tensor(2.2158), 'grad_norm:', tensor(1.2900))
+fval before -1.7763568394002505e-18
+a/e/r 0.03932133547001918 0.04431645638748618 0.8872851909956074
+fval after -0.03932133547001918
+Episode 377	Average reward 1093.34
+('lagrange multiplier:', tensor(2.4546), 'grad_norm:', tensor(1.2505))
+fval before 1.3026616822268503e-17
+a/e/r 0.04457886042746947 0.049091614463254114 0.9080748497452142
+fval after -0.044578860427469454
+Episode 378	Average reward 978.10
+('lagrange multiplier:', tensor(2.5154), 'grad_norm:', tensor(1.2083))
+fval before -1.0658141036401503e-17
+a/e/r 0.052230268773483746 0.050308012763623025 1.038209738454441
+fval after -0.05223026877348376
+Episode 379	Average reward 1108.74
+('lagrange multiplier:', tensor(2.3571), 'grad_norm:', tensor(1.3642))
+fval before -5.921189464667502e-18
+a/e/r 0.039145212561314056 0.0471423769579628 0.8303614515708473
+fval after -0.03914521256131406
+Episode 380	Average reward 1052.75
+('lagrange multiplier:', tensor(2.3653), 'grad_norm:', tensor(1.4600))
+fval before 4.1448326252672514e-18
+a/e/r 0.04022327765058292 0.047306536779387426 0.8502689139592471
+fval after -0.040223277650582916
+Episode 381	Average reward 1058.34
+('lagrange multiplier:', tensor(2.4999), 'grad_norm:', tensor(1.3541))
+fval before 1.8947806286936004e-17
+a/e/r 0.04219864570362999 0.04999876321697772 0.8439937908164276
+fval after -0.04219864570362997
+Episode 382	Average reward 961.31
+('lagrange multiplier:', tensor(2.4834), 'grad_norm:', tensor(1.1859))
+fval before -5.3290705182007515e-18
+a/e/r 0.045503962414780365 0.049667274610908155 0.9161759482729213
+fval after -0.04550396241478037
+Episode 383	Average reward 1031.63
+('lagrange multiplier:', tensor(2.1962), 'grad_norm:', tensor(1.0605))
+fval before -1.0658141036401503e-17
+a/e/r 0.0402626979018869 0.04392382466717319 0.9166482702035175
+fval after -0.04026269790188691
+Episode 384	Average reward 1083.61
+('lagrange multiplier:', tensor(2.4605), 'grad_norm:', tensor(1.1661))
+fval before 5.921189464667501e-19
+a/e/r 0.039420840861408575 0.04921027200636556 0.8010693551197872
+fval after -0.039420840861408575
+Episode 385	Average reward 1087.69
+('lagrange multiplier:', tensor(2.0344), 'grad_norm:', tensor(1.1344))
+fval before 5.921189464667501e-19
+a/e/r 0.036479132898804154 0.04068850398923995 0.8965464276703572
+fval after -0.036479132898804154
+Episode 386	Average reward 1060.08
+('lagrange multiplier:', tensor(2.2509), 'grad_norm:', tensor(1.2042))
+fval before 5.3290705182007515e-18
+a/e/r 0.03866579748324186 0.04501772387290687 0.8589016537664668
+fval after -0.03866579748324185
+Episode 387	Average reward 1070.73
+('lagrange multiplier:', tensor(2.3502), 'grad_norm:', tensor(1.4164))
+fval before 1.1842378929335003e-18
+a/e/r 0.038870857387521864 0.04700307457224234 0.826985420449007
+fval after -0.038870857387521864
+Episode 388	Average reward 1074.58
+('lagrange multiplier:', tensor(2.3068), 'grad_norm:', tensor(1.0414))
+fval before 2.3684757858670005e-18
+a/e/r 0.03847264956724859 0.04613544383954303 0.8339065665230124
+fval after -0.03847264956724859
+Episode 389	Average reward 1049.77
+('lagrange multiplier:', tensor(2.2717), 'grad_norm:', tensor(1.1407))
+fval before -4.1448326252672514e-18
+a/e/r 0.03954660545321873 0.04543347262782519 0.8704288526912839
+fval after -0.03954660545321874
+Episode 390	Average reward 1017.92
+('lagrange multiplier:', tensor(2.6594), 'grad_norm:', tensor(1.4118))
+fval before -9.473903143468002e-18
+a/e/r 0.05456124859954295 0.053187146848213254 1.0258352220932463
+fval after -0.05456124859954296
+Episode 391	Average reward 1090.09
+('lagrange multiplier:', tensor(2.0072), 'grad_norm:', tensor(1.1835))
+fval before -9.177843670234627e-18
+a/e/r 0.03562948462066577 0.04014373197082695 0.8875478903296348
+fval after -0.03562948462066578
+Episode 392	Average reward 1093.84
+('lagrange multiplier:', tensor(2.1412), 'grad_norm:', tensor(1.6757))
+fval before -5.921189464667502e-18
+a/e/r 0.036186076700368004 0.04282440422020585 0.8449872767475495
+fval after -0.03618607670036801
+Episode 393	Average reward 1117.40
+('lagrange multiplier:', tensor(2.3271), 'grad_norm:', tensor(1.4534))
+fval before 2.3684757858670005e-18
+a/e/r 0.04011432359127696 0.0465425281384761 0.8618853593841408
+fval after -0.04011432359127696
+Episode 394	Average reward 1130.49
+('lagrange multiplier:', tensor(2.2537), 'grad_norm:', tensor(1.2834))
+fval before 0.0
+a/e/r 0.040008691472636845 0.04507456196692139 0.8876113205935933
+fval after -0.040008691472636845
+Episode 395	Average reward 1074.05
+('lagrange multiplier:', tensor(2.2017), 'grad_norm:', tensor(1.1184))
+fval before -2.3684757858670005e-18
+a/e/r 0.03819118413934887 0.0440339248730997 0.8673127423778625
+fval after -0.03819118413934887
+Episode 396	Average reward 1099.21
+('lagrange multiplier:', tensor(2.2735), 'grad_norm:', tensor(1.5835))
+fval before -5.921189464667502e-18
+a/e/r 0.04072229872830183 0.04547058405590872 0.895574569225489
+fval after -0.04072229872830184
+Episode 397	Average reward 1042.88
+('lagrange multiplier:', tensor(2.3209), 'grad_norm:', tensor(1.4131))
+fval before 5.921189464667501e-19
+a/e/r 0.04251945479679194 0.04641876961940102 0.9159970233037082
+fval after -0.04251945479679194
+Episode 398	Average reward 1090.45
+('lagrange multiplier:', tensor(2.3430), 'grad_norm:', tensor(1.6698))
+fval before 8.585724723767878e-18
+a/e/r 0.040124064149571786 0.046859007514970956 0.8562721721486007
+fval after -0.04012406414957178
+Episode 399	Average reward 1110.39
+('lagrange multiplier:', tensor(2.3017), 'grad_norm:', tensor(1.5326))
+fval before -3.552713678800501e-18
+a/e/r 0.039882843319468245 0.04603385704690757 0.8663806571504193
+fval after -0.03988284331946825
+Episode 400	Average reward 1085.07
+('lagrange multiplier:', tensor(2.2899), 'grad_norm:', tensor(1.5554))
+fval before -2.960594732333751e-18
+a/e/r 0.03930052946375449 0.04579803875895895 0.8581269095517015
+fval after -0.03930052946375449
+Episode 401	Average reward 1106.47
+('lagrange multiplier:', tensor(2.2675), 'grad_norm:', tensor(1.0476))
+fval before -6.5133084111342516e-18
+a/e/r 0.03809737883192299 0.04535056591125035 0.8400640227175639
+fval after -0.038097378831923
+Episode 402	Average reward 1106.76
+('lagrange multiplier:', tensor(2.1391), 'grad_norm:', tensor(1.0584))
+fval before -1.7763568394002505e-18
+a/e/r 0.03838936540982079 0.042781799021042025 0.897329385118638
+fval after -0.03838936540982079
+Episode 403	Average reward 1084.49
+('lagrange multiplier:', tensor(2.5995), 'grad_norm:', tensor(1.5248))
+fval before 7.105427357601002e-18
+a/e/r 0.04090005122947993 0.05198960358008431 0.786696731904829
+fval after -0.04090005122947992
+Episode 404	Average reward 1109.21
+('lagrange multiplier:', tensor(2.6259), 'grad_norm:', tensor(1.2909))
+fval before -4.1448326252672514e-18
+a/e/r 0.04253663289538528 0.05251853830236996 0.8099355821840488
+fval after -0.042536632895385285
+Episode 405	Average reward 1112.72
+('lagrange multiplier:', tensor(2.0856), 'grad_norm:', tensor(1.5332))
+fval before -1.2434497875801754e-17
+a/e/r 0.03497634876977623 0.0417117609937244 0.8385248653260762
+fval after -0.03497634876977625
+Episode 406	Average reward 1074.83
+('lagrange multiplier:', tensor(2.1599), 'grad_norm:', tensor(1.3493))
+fval before -7.105427357601002e-18
+a/e/r 0.03839970732934063 0.04319874705849689 0.888907895345721
+fval after -0.038399707329340636
+Episode 407	Average reward 1082.74
+('lagrange multiplier:', tensor(2.5150), 'grad_norm:', tensor(1.3353))
+fval before -1.3026616822268503e-17
+a/e/r 0.040424834432841034 0.05029923196505924 0.8036869123751723
+fval after -0.04042483443284105
+Episode 408	Average reward 1097.47
+('lagrange multiplier:', tensor(2.3536), 'grad_norm:', tensor(1.1999))
+fval before -6.5133084111342516e-18
+a/e/r 0.03994064614705045 0.04707176251602681 0.8485054311159821
+fval after -0.03994064614705046
+Episode 409	Average reward 1102.68
+('lagrange multiplier:', tensor(2.4018), 'grad_norm:', tensor(1.5010))
+fval before 1.2138438402568379e-17
+a/e/r 0.04254992942663134 0.04803523290662732 0.8858066642320958
+fval after -0.04254992942663133
+Episode 410	Average reward 1008.85
+('lagrange multiplier:', tensor(2.5682), 'grad_norm:', tensor(1.7291))
+fval before 9.473903143468002e-18
+a/e/r 0.056305338140977226 0.05136401783354937 1.0962019817733248
+fval after -0.05630533814097722
+Episode 411	Average reward 1116.59
+('lagrange multiplier:', tensor(2.1478), 'grad_norm:', tensor(1.1776))
+fval before -3.2566542055671258e-18
+a/e/r 0.037337815984998066 0.042956989066587244 0.8691907136955305
+fval after -0.037337815984998066
+Episode 412	Average reward 1125.05
+('lagrange multiplier:', tensor(2.4270), 'grad_norm:', tensor(1.3493))
+fval before -9.473903143468002e-18
+a/e/r 0.04218080152547772 0.048540976524214574 0.8689730727694757
+fval after -0.04218080152547773
+Episode 413	Average reward 1105.12
+('lagrange multiplier:', tensor(2.2752), 'grad_norm:', tensor(1.4773))
+fval before 0.0
+a/e/r 0.04007314286981178 0.045504396179422056 0.8806433275546596
+fval after -0.04007314286981178
+Episode 414	Average reward 1115.59
+('lagrange multiplier:', tensor(2.0115), 'grad_norm:', tensor(1.3671))
+fval before 1.7763568394002505e-18
+a/e/r 0.03614385253314536 0.04023019372536238 0.8984260125587995
+fval after -0.03614385253314536
+Episode 415	Average reward 1117.50
+('lagrange multiplier:', tensor(2.2094), 'grad_norm:', tensor(1.3187))
+fval before 1.1842378929335004e-17
+a/e/r 0.0374478143014072 0.044188691475460236 0.8474524375134187
+fval after -0.03744781430140719
+Episode 416	Average reward 1120.40
+('lagrange multiplier:', tensor(2.0330), 'grad_norm:', tensor(1.2861))
+fval before -4.736951571734001e-18
+a/e/r 0.036436213285535646 0.04065925883779587 0.8961356976744843
+fval after -0.03643621328553565
+Episode 417	Average reward 1072.86
+('lagrange multiplier:', tensor(2.5799), 'grad_norm:', tensor(1.2003))
+fval before -8.881784197001253e-18
+a/e/r 0.043871192010010086 0.05159840190651773 0.8502432321352268
+fval after -0.04387119201001009
+Episode 418	Average reward 1133.02
+('lagrange multiplier:', tensor(2.0305), 'grad_norm:', tensor(1.3525))
+fval before 4.1448326252672514e-18
+a/e/r 0.03552726685931092 0.040610292631878105 0.8748340520802569
+fval after -0.035527266859310916
+Episode 419	Average reward 1141.09
+('lagrange multiplier:', tensor(2.2101), 'grad_norm:', tensor(1.3634))
+fval before 2.5461114698070257e-17
+a/e/r 0.03808448261137036 0.044201667376584625 0.8616073752807166
+fval after -0.03808448261137033
+Episode 420	Average reward 1089.58
+('lagrange multiplier:', tensor(2.2527), 'grad_norm:', tensor(1.1978))
+fval before -4.736951571734001e-18
+a/e/r 0.038564811942520885 0.04505377577258627 0.8559729186113253
+fval after -0.03856481194252089
+Episode 421	Average reward 1117.37
+('lagrange multiplier:', tensor(2.1385), 'grad_norm:', tensor(1.0632))
+fval before 6.5133084111342516e-18
+a/e/r 0.038073253073017586 0.04277043480501164 0.8901769001552526
+fval after -0.03807325307301758
+Episode 422	Average reward 1066.93
+('lagrange multiplier:', tensor(2.2272), 'grad_norm:', tensor(1.3671))
+fval before 2.960594732333751e-18
+a/e/r 0.03934026829601354 0.04454342456417229 0.8831891279337373
+fval after -0.03934026829601354
+Episode 423	Average reward 1119.97
+('lagrange multiplier:', tensor(2.2328), 'grad_norm:', tensor(1.1047))
+fval before 6.5133084111342516e-18
+a/e/r 0.03850480293929542 0.04465571966271703 0.8622591513499445
+fval after -0.03850480293929541
+Episode 424	Average reward 1132.36
+('lagrange multiplier:', tensor(2.3568), 'grad_norm:', tensor(1.5722))
+fval before 0.0
+a/e/r 0.03810555750796128 0.04713547832605283 0.8084262398775635
+fval after -0.03810555750796128
+Episode 425	Average reward 1156.05
+('lagrange multiplier:', tensor(2.3287), 'grad_norm:', tensor(1.5144))
+fval before -1.1546319456101627e-17
+a/e/r 0.04118969269371608 0.04657308598281699 0.8844097792642064
+fval after -0.04118969269371609
+Episode 426	Average reward 1060.78
+('lagrange multiplier:', tensor(2.3163), 'grad_norm:', tensor(1.0492))
+fval before 1.8059627867235878e-17
+a/e/r 0.04129300144516243 0.046325373549343914 0.8913689902830205
+fval after -0.04129300144516241
+Episode 427	Average reward 1135.42
+('lagrange multiplier:', tensor(1.9405), 'grad_norm:', tensor(1.1226))
+fval before -5.921189464667501e-19
+a/e/r 0.03466856996805458 0.038809823830730575 0.893293670160985
+fval after -0.03466856996805458
+Episode 428	Average reward 1136.97
+('lagrange multiplier:', tensor(2.3419), 'grad_norm:', tensor(1.2577))
+fval before 3.552713678800501e-18
+a/e/r 0.03917395593456766 0.046837553251190954 0.8363792131599354
+fval after -0.039173955934567656
+Episode 429	Average reward 1118.67
+('lagrange multiplier:', tensor(2.0780), 'grad_norm:', tensor(1.0159))
+fval before -1.6579330501069006e-17
+a/e/r 0.03669178746071073 0.04156082974176533 0.8828454024785362
+fval after -0.036691787460710744
+Episode 430	Average reward 1139.69
+('lagrange multiplier:', tensor(1.9724), 'grad_norm:', tensor(0.8651))
+fval before -1.7763568394002505e-18
+a/e/r 0.034222501308728025 0.039447052026206554 0.8675553571403102
+fval after -0.034222501308728025
+Episode 431	Average reward 1133.76
+('lagrange multiplier:', tensor(2.0745), 'grad_norm:', tensor(1.2354))
+fval before -4.736951571734001e-18
+a/e/r 0.03572957866982907 0.04148918096422649 0.8611782117520334
+fval after -0.03572957866982908
+Episode 432	Average reward 1124.34
+('lagrange multiplier:', tensor(2.0043), 'grad_norm:', tensor(1.3807))
+fval before 0.0
+a/e/r 0.03554668893892836 0.040085856492580535 0.8867638625984622
+fval after -0.03554668893892836
+Episode 433	Average reward 1141.36
+('lagrange multiplier:', tensor(2.2184), 'grad_norm:', tensor(1.2166))
+fval before -1.1842378929335003e-18
+a/e/r 0.038059348090259806 0.04436713980821428 0.857827397816917
+fval after -0.038059348090259806
+Episode 434	Average reward 1147.18
+('lagrange multiplier:', tensor(2.1307), 'grad_norm:', tensor(1.4549))
+fval before 4.736951571734001e-18
+a/e/r 0.037159533543705554 0.04261340476946752 0.8720151263372022
+fval after -0.03715953354370555
+Episode 435	Average reward 1154.54
+('lagrange multiplier:', tensor(2.2392), 'grad_norm:', tensor(1.2533))
+fval before 1.5987211554602253e-17
+a/e/r 0.03857320234170861 0.044784903695326186 0.8612992137735502
+fval after -0.03857320234170859
+Episode 436	Average reward 1138.12
+('lagrange multiplier:', tensor(2.2056), 'grad_norm:', tensor(1.1402))
+fval before -8.289665250534503e-18
+a/e/r 0.037268692553152565 0.0441114828051223 0.8448750797564406
+fval after -0.03726869255315257
+Episode 437	Average reward 1139.78
+('lagrange multiplier:', tensor(2.3760), 'grad_norm:', tensor(1.4412))
+fval before -3.552713678800501e-18
+a/e/r 0.040492078584888694 0.04752041200595029 0.8520986429961606
+fval after -0.0404920785848887
+Episode 438	Average reward 1127.98
+('lagrange multiplier:', tensor(2.0994), 'grad_norm:', tensor(1.2932))
+fval before 4.1448326252672514e-18
+a/e/r 0.03729350800935898 0.04198812518323069 0.888191788669177
+fval after -0.037293508009358975
+Episode 439	Average reward 1137.02
+('lagrange multiplier:', tensor(2.3716), 'grad_norm:', tensor(1.2399))
+fval before -4.736951571734001e-18
+a/e/r 0.036997801894246875 0.04743147993238941 0.7800263020885057
+fval after -0.03699780189424688
+Episode 440	Average reward 1136.51
+('lagrange multiplier:', tensor(2.0109), 'grad_norm:', tensor(1.1475))
+fval before 3.552713678800501e-18
+a/e/r 0.034715164554817296 0.040217279033700704 0.8631902850943043
+fval after -0.03471516455481729
+Episode 441	Average reward 1141.27
+('lagrange multiplier:', tensor(2.2280), 'grad_norm:', tensor(1.1918))
+fval before -2.3684757858670005e-18
+a/e/r 0.037800048393643565 0.044559379328603405 0.8483073364843546
+fval after -0.037800048393643565
+Episode 442	Average reward 1149.10
+('lagrange multiplier:', tensor(2.5320), 'grad_norm:', tensor(1.6202))
+fval before 7.697546304067752e-18
+a/e/r 0.039425623195762774 0.05063936462516012 0.7785568299996836
+fval after -0.03942562319576277
+Episode 443	Average reward 1119.62
+('lagrange multiplier:', tensor(2.2364), 'grad_norm:', tensor(1.3715))
+fval before 1.0066022089934753e-17
+a/e/r 0.03748393817681387 0.044728283021062076 0.8380365988822571
+fval after -0.037483938176813864
+Episode 444	Average reward 1138.45
+('lagrange multiplier:', tensor(2.1043), 'grad_norm:', tensor(1.4909))
+fval before -7.105427357601002e-18
+a/e/r 0.03750845260136554 0.04208677163454823 0.8912171483967082
+fval after -0.037508452601365545
+Episode 445	Average reward 1137.69
+('lagrange multiplier:', tensor(2.0716), 'grad_norm:', tensor(1.5793))
+fval before -4.736951571734001e-18
+a/e/r 0.03707390387428147 0.04143154571222666 0.8948230928140529
+fval after -0.03707390387428148
+Episode 446	Average reward 1100.13
+('lagrange multiplier:', tensor(2.4395), 'grad_norm:', tensor(1.3382))
+fval before 1.1250259982868253e-17
+a/e/r 0.03983585742697098 0.0487891992065042 0.816489265551634
+fval after -0.03983585742697097
+Episode 447	Average reward 1151.63
+('lagrange multiplier:', tensor(2.3836), 'grad_norm:', tensor(1.4642))
+fval before 5.921189464667502e-18
+a/e/r 0.04136259395518632 0.04767275576696167 0.8676358916060725
+fval after -0.041362593955186315
+Episode 448	Average reward 1106.11
+('lagrange multiplier:', tensor(2.1565), 'grad_norm:', tensor(1.4604))
+fval before -1.0066022089934753e-17
+a/e/r 0.03908012313118625 0.04313049869432621 0.9060902218672287
+fval after -0.03908012313118626
+Episode 449	Average reward 1155.08
+('lagrange multiplier:', tensor(2.1624), 'grad_norm:', tensor(1.0473))
+fval before -2.3684757858670005e-18
+a/e/r 0.037352269544152696 0.04324877795310232 0.8636606931334887
+fval after -0.037352269544152696
+Episode 450	Average reward 1136.21
+('lagrange multiplier:', tensor(2.0946), 'grad_norm:', tensor(1.1039))
+fval before 8.289665250534503e-18
+a/e/r 0.03782988163477611 0.04189245034498715 0.9030238461404021
+fval after -0.0378298816347761
+Episode 451	Average reward 1152.61
+('lagrange multiplier:', tensor(2.2537), 'grad_norm:', tensor(1.1776))
+fval before -2.3684757858670005e-18
+a/e/r 0.03832946179709189 0.045074503769654356 0.8503579316805823
+fval after -0.03832946179709189
+Episode 452	Average reward 1141.45
+('lagrange multiplier:', tensor(2.1597), 'grad_norm:', tensor(1.2220))
+fval before 1.1842378929335003e-18
+a/e/r 0.03784041101857052 0.04319341624636567 0.8760689546466341
+fval after -0.03784041101857052
+Episode 453	Average reward 1134.49
+('lagrange multiplier:', tensor(2.1752), 'grad_norm:', tensor(1.2482))
+fval before -5.3290705182007515e-18
+a/e/r 0.037673582661916706 0.04350471423311648 0.8659655241049481
+fval after -0.03767358266191671
+Episode 454	Average reward 1119.58
+('lagrange multiplier:', tensor(2.2840), 'grad_norm:', tensor(1.7228))
+fval before 1.1842378929335003e-18
+a/e/r 0.039006298634718495 0.04568033553185027 0.853896937939995
+fval after -0.039006298634718495
+Episode 455	Average reward 1136.72
+('lagrange multiplier:', tensor(2.4951), 'grad_norm:', tensor(1.6810))
+fval before 5.921189464667502e-18
+a/e/r 0.041568825706646495 0.0499019815398821 0.8330095203418791
+fval after -0.04156882570664649
+Episode 456	Average reward 1111.31
+('lagrange multiplier:', tensor(2.2789), 'grad_norm:', tensor(1.3673))
+fval before 5.921189464667502e-18
+a/e/r 0.03896301424168018 0.04557892644081326 0.8548471252888282
+fval after -0.03896301424168017
+Episode 457	Average reward 1162.52
+('lagrange multiplier:', tensor(2.1123), 'grad_norm:', tensor(1.2238))
+fval before 1.4210854715202004e-17
+a/e/r 0.03422874781670293 0.04224604842529754 0.8102236562368343
+fval after -0.03422874781670292
+Episode 458	Average reward 1146.34
+('lagrange multiplier:', tensor(2.6099), 'grad_norm:', tensor(1.2778))
+fval before -8.289665250534503e-18
+a/e/r 0.04209252865042237 0.05219734233205752 0.8064113376241921
+fval after -0.04209252865042238
+Episode 459	Average reward 1115.98
+('lagrange multiplier:', tensor(2.5969), 'grad_norm:', tensor(1.8743))
+fval before 4.736951571734001e-18
+a/e/r 0.042392885755696795 0.05193710532141316 0.8162350499387309
+fval after -0.04239288575569679
+Episode 460	Average reward 1127.88
+('lagrange multiplier:', tensor(1.8600), 'grad_norm:', tensor(0.9876))
+fval before 6.5133084111342516e-18
+a/e/r 0.03344594520430821 0.03720054726699883 0.8990713218345207
+fval after -0.0334459452043082
+Episode 461	Average reward 1151.72
+('lagrange multiplier:', tensor(1.8582), 'grad_norm:', tensor(1.0906))
+fval before 5.921189464667502e-18
+a/e/r 0.03420652201272981 0.03716394941594986 0.9204221443173424
+fval after -0.034206522012729806
+Episode 462	Average reward 1131.98
+('lagrange multiplier:', tensor(2.3051), 'grad_norm:', tensor(1.0700))
+fval before -1.0066022089934753e-17
+a/e/r 0.040239800543415784 0.046101531517809366 0.8728517083618111
+fval after -0.04023980054341579
+Episode 463	Average reward 1079.12
+('lagrange multiplier:', tensor(2.1999), 'grad_norm:', tensor(1.2070))
+fval before 3.552713678800501e-18
+a/e/r 0.041801257820343454 0.04399839901070139 0.950063155938389
+fval after -0.04180125782034345
+Episode 464	Average reward 1129.07
+('lagrange multiplier:', tensor(2.3190), 'grad_norm:', tensor(1.4102))
+fval before -3.552713678800501e-18
+a/e/r 0.03900583227795294 0.046379102091602745 0.8410217213975606
+fval after -0.03900583227795295
+Episode 465	Average reward 1144.40
+('lagrange multiplier:', tensor(2.7390), 'grad_norm:', tensor(1.3767))
+fval before 4.1448326252672514e-18
+a/e/r 0.0421213940008899 0.05478009484468113 0.7689178728207272
+fval after -0.04212139400088989
+Episode 466	Average reward 1149.90
+('lagrange multiplier:', tensor(1.9913), 'grad_norm:', tensor(1.4402))
+fval before -5.921189464667501e-19
+a/e/r 0.03463738906031363 0.03982674155457961 0.8697018060803604
+fval after -0.03463738906031363
+Episode 467	Average reward 1165.16
+('lagrange multiplier:', tensor(2.0673), 'grad_norm:', tensor(1.1529))
+fval before -5.3290705182007515e-18
+a/e/r 0.03679847868773279 0.041345923122515886 0.8900146836410413
+fval after -0.0367984786877328
+Episode 468	Average reward 1180.14
+('lagrange multiplier:', tensor(2.2369), 'grad_norm:', tensor(1.4204))
+fval before 5.921189464667501e-19
+a/e/r 0.03905232993957727 0.04473788239171523 0.8729141356679224
+fval after -0.03905232993957727
+Episode 469	Average reward 1157.76
+('lagrange multiplier:', tensor(2.3594), 'grad_norm:', tensor(1.5248))
+fval before -2.3684757858670005e-18
+a/e/r 0.03980590086645104 0.04718840283204242 0.843552620505765
+fval after -0.03980590086645104
+Episode 470	Average reward 1133.05
+('lagrange multiplier:', tensor(2.5405), 'grad_norm:', tensor(1.9209))
+fval before 5.3290705182007515e-18
+a/e/r 0.04322023401911768 0.05081097708539607 0.8506082051222728
+fval after -0.043220234019117676
+Episode 471	Average reward 1126.53
+('lagrange multiplier:', tensor(2.3692), 'grad_norm:', tensor(1.2826))
+fval before -5.3290705182007515e-18
+a/e/r 0.03931157282660515 0.047383716289579034 0.8296430906001104
+fval after -0.039311572826605155
+Episode 472	Average reward 1139.74
+('lagrange multiplier:', tensor(2.2019), 'grad_norm:', tensor(1.2309))
+fval before -1.3026616822268503e-17
+a/e/r 0.03935207217797782 0.044038980335629016 0.8935736449406544
+fval after -0.039352072177977836
+Episode 473	Average reward 1151.43
+('lagrange multiplier:', tensor(2.2988), 'grad_norm:', tensor(1.4559))
+fval before -4.736951571734001e-18
+a/e/r 0.0402301853881745 0.04597583769234961 0.8750288718473708
+fval after -0.04023018538817451
+Episode 474	Average reward 1147.32
+('lagrange multiplier:', tensor(2.0251), 'grad_norm:', tensor(1.6796))
+fval before -1.4802973661668754e-17
+a/e/r 0.035853027821505436 0.04050265665279593 0.8852018801840859
+fval after -0.03585302782150545
+Episode 475	Average reward 1141.02
+('lagrange multiplier:', tensor(2.2929), 'grad_norm:', tensor(1.2602))
+fval before -3.552713678800501e-18
+a/e/r 0.039596098585789836 0.0458581306463955 0.8634477251397106
+fval after -0.03959609858578984
+Episode 476	Average reward 1136.28
+('lagrange multiplier:', tensor(2.2920), 'grad_norm:', tensor(1.5735))
+fval before 4.1448326252672514e-18
+a/e/r 0.038065428120787566 0.0458401908747667 0.8303941889068606
+fval after -0.03806542812078756
+Episode 477	Average reward 1135.22
+('lagrange multiplier:', tensor(2.2417), 'grad_norm:', tensor(1.3098))
+fval before -8.881784197001253e-18
+a/e/r 0.03937914524160572 0.04483364147138451 0.8783392102276553
+fval after -0.039379145241605726
+Episode 478	Average reward 1144.09
+('lagrange multiplier:', tensor(1.9845), 'grad_norm:', tensor(1.0527))
+fval before 6.5133084111342516e-18
+a/e/r 0.03532069174589176 0.03968938689269923 0.8899278752121242
+fval after -0.03532069174589175
+Episode 479	Average reward 1175.81
+('lagrange multiplier:', tensor(1.9562), 'grad_norm:', tensor(0.9492))
+fval before -4.736951571734001e-18
+a/e/r 0.03450911364132178 0.0391234109173216 0.8820578991501768
+fval after -0.03450911364132179
+Episode 480	Average reward 1161.94
+('lagrange multiplier:', tensor(2.2512), 'grad_norm:', tensor(1.0776))
+fval before 1.3026616822268503e-17
+a/e/r 0.03777691402083313 0.045023095909598305 0.8390563389218112
+fval after -0.037776914020833115
+Episode 481	Average reward 1147.74
+('lagrange multiplier:', tensor(2.5512), 'grad_norm:', tensor(1.3525))
+fval before -8.289665250534503e-18
+a/e/r 0.04300766681131604 0.05102475543221288 0.8428784508032056
+fval after -0.04300766681131605
+Episode 482	Average reward 1139.65
+('lagrange multiplier:', tensor(2.0817), 'grad_norm:', tensor(1.2418))
+fval before 1.0066022089934753e-17
+a/e/r 0.03692897316918032 0.041633327000829265 0.8870050949434033
+fval after -0.03692897316918031
+Episode 483	Average reward 1145.80
+('lagrange multiplier:', tensor(2.3774), 'grad_norm:', tensor(1.3133))
+fval before 5.921189464667502e-18
+a/e/r 0.03848437299099987 0.04754813441301073 0.8093771388950495
+fval after -0.03848437299099986
+Episode 484	Average reward 1128.21
+('lagrange multiplier:', tensor(2.4419), 'grad_norm:', tensor(1.3228))
+fval before -5.921189464667501e-19
+a/e/r 0.04059065032505818 0.04883874373266251 0.831115774542576
+fval after -0.04059065032505818
+Episode 485	Average reward 1119.33
+('lagrange multiplier:', tensor(2.5817), 'grad_norm:', tensor(1.4309))
+fval before 1.7171449447535755e-17
+a/e/r 0.04365567758269881 0.05163328227796069 0.8454949144562312
+fval after -0.043655677582698796
+Episode 486	Average reward 1122.12
+('lagrange multiplier:', tensor(2.0506), 'grad_norm:', tensor(1.4093))
+fval before -3.552713678800501e-18
+a/e/r 0.035708748318756325 0.04101260627099469 0.8706773737520453
+fval after -0.03570874831875633
+Episode 487	Average reward 1170.65
+('lagrange multiplier:', tensor(2.2089), 'grad_norm:', tensor(1.3140))
+fval before -4.736951571734001e-18
+a/e/r 0.038397334936877886 0.044178405977445455 0.8691426068310614
+fval after -0.03839733493687789
+Episode 488	Average reward 1159.91

@@ -1,0 +1,103 @@
+2026-01-17 21:54:44,352 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Current SDK version is 0.17.1
+2026-01-17 21:54:44,352 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Configure stats pid to 59056
+2026-01-17 21:54:44,353 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Loading settings from /Users/user/.config/wandb/settings
+2026-01-17 21:54:44,353 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Loading settings from /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/wandb/settings
+2026-01-17 21:54:44,353 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2026-01-17 21:54:44,353 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_trpo.py', 'program_abspath': '/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py', 'program': '/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py'}
+2026-01-17 21:54:44,353 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Applying login settings: {}
+2026-01-17 21:54:44,353 INFO    MainThread:59056 [wandb_setup.py:_flush():76] Applying login settings: {}
+2026-01-17 21:54:44,354 INFO    MainThread:59056 [wandb_init.py:_log_setup():520] Logging user logs to /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/wandb/run-20260117_215444-p3x1hi7w/logs/debug.log
+2026-01-17 21:54:44,354 INFO    MainThread:59056 [wandb_init.py:_log_setup():521] Logging internal logs to /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/wandb/run-20260117_215444-p3x1hi7w/logs/debug-internal.log
+2026-01-17 21:54:44,354 INFO    MainThread:59056 [wandb_init.py:init():560] calling init triggers
+2026-01-17 21:54:44,354 INFO    MainThread:59056 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {'gamma': 0.99, 'env_name': 'MountainCarContinuous-v0', 'tau': 0.95, 'l2_reg': 0.001, 'max_kl': 0.01, 'damping': 0.1, 'seed': 42, 'batch_size': 2048, 'total_timesteps': 1000000, 'render': False, 'log_interval': 1}
+2026-01-17 21:54:44,354 INFO    MainThread:59056 [wandb_init.py:init():610] starting backend
+2026-01-17 21:54:44,355 INFO    MainThread:59056 [wandb_init.py:init():614] setting up manager
+2026-01-17 21:54:44,372 INFO    MainThread:59056 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2026-01-17 21:54:44,388 INFO    MainThread:59056 [wandb_init.py:init():622] backend started and connected
+2026-01-17 21:54:44,398 INFO    MainThread:59056 [wandb_init.py:init():711] updated telemetry
+2026-01-17 21:54:44,458 INFO    MainThread:59056 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2026-01-17 21:55:42,644 INFO    Thread-1 (wrapped_target):59056 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connection.py", line 212, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x16ec59650>, 'Connection to api.wandb.ai timed out. (connect timeout=20)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x16ec59650>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/requests/adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x16ec59650>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+2026-01-17 21:55:53,140 INFO    MainThread:59056 [wandb_run.py:_on_init():2402] communicating current version
+2026-01-17 21:55:53,378 INFO    MainThread:59056 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.24.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2026-01-17 21:55:53,379 INFO    MainThread:59056 [wandb_init.py:init():795] starting run threads in backend
+2026-01-17 21:56:05,867 INFO    MainThread:59056 [wandb_run.py:_console_start():2380] atexit reg
+2026-01-17 21:56:05,867 INFO    MainThread:59056 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2026-01-17 21:56:05,867 INFO    MainThread:59056 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2026-01-17 21:56:05,867 INFO    MainThread:59056 [wandb_run.py:_redirect():2325] Redirects installed.
+2026-01-17 21:56:05,872 INFO    MainThread:59056 [wandb_init.py:init():838] run started, returning control to user process
+2026-01-17 21:58:05,551 WARNING MsgRouterThr:59056 [router.py:message_loop():77] message_loop has been closed

@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 55, in <module>
+    env = gym.make(args.env_name)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 676, in make
+    return registry.make(id, **kwargs)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 518, in make
+    spec = self.spec(path)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 540, in spec
+    return self.env_specs[id]
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 376, in __getitem__
+    self._assert_version_exists(namespace, name, version)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 369, in _assert_version_exists
+    raise error.VersionNotFound(message)
+gym.error.VersionNotFound: Environment version `v4` for `Ant` could not be found. `Ant` provides the versioned environments: [ `v2`, `v3` ].
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 55, in <module>
+    env = gym.make(args.env_name)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 676, in make
+    return registry.make(id, **kwargs)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 518, in make
+    spec = self.spec(path)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 540, in spec
+    return self.env_specs[id]
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 376, in __getitem__
+    self._assert_version_exists(namespace, name, version)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gym/envs/registration.py", line 369, in _assert_version_exists
+    raise error.VersionNotFound(message)
+gym.error.VersionNotFound: Environment version `v4` for `Ant` could not be found. `Ant` provides the versioned environments: [ `v2`, `v3` ].

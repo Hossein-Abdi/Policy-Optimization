@@ -1,0 +1,1 @@
+{"Episodic/episodic_return":995.1382446289062,"Episodic/episodic_length":940,"Performance/advantage":-0.017831541901834586,"_wandb":{"runtime":357},"_step":1150689,"Performance/return":0.8724986704657244,"_runtime":357.74637475,"Loss/pg_loss":-0.07804384883064255,"_timestamp":1.7692563969443982e+09,"Performance/value":0.9733918266663967,"Loss/v_loss":0.024389527623637212}

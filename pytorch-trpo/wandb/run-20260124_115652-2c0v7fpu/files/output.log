@@ -1,0 +1,14 @@
+/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py:85: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:281.)
+  states = torch.Tensor(batch.state)
+('lagrange multiplier:', tensor(2.4855), 'grad_norm:', tensor(0.3061))
+fval before 5.354113954439258e-17
+a/e/r 0.047176522626993074 0.04970951492805585 0.9490441155032642
+fval after -0.04717652262699302
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 227, in <module>
+    print('Episode {}\tAverage reward {:.2f}'.format(
+TypeError: unsupported format string passed to numpy.ndarray.__format__
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 227, in <module>
+    print('Episode {}\tAverage reward {:.2f}'.format(
+TypeError: unsupported format string passed to numpy.ndarray.__format__

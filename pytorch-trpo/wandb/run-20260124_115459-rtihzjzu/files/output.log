@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 190, in <module>
+    next_state, reward, done, info = env.step(action)
+ValueError: too many values to unpack (expected 4)
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 190, in <module>
+    next_state, reward, done, info = env.step(action)
+ValueError: too many values to unpack (expected 4)

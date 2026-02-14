@@ -1,0 +1,24 @@
+/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.seed to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.seed` for environment variables or `env.get_wrapper_attr('seed')` that will search the reminding wrappers.[0m
+  logger.warn(
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 67, in <module>
+    env.seed(args.seed)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+  [Previous line repeated 5 more times]
+AttributeError: 'AntEnv' object has no attribute 'seed'
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 67, in <module>
+    env.seed(args.seed)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/lib/python3.10/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+  [Previous line repeated 5 more times]
+AttributeError: 'AntEnv' object has no attribute 'seed'

@@ -1,0 +1,37 @@
+{
+    "os": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.7",
+    "heartbeatAt": "2026-01-17T22:31:40.477563",
+    "startedAt": "2026-01-17T22:31:39.124716",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py",
+    "codePathLocal": "main_trpo.py",
+    "codePath": "main_trpo.py",
+    "git": {
+        "remote": "https://github.com/ikostrikov/pytorch-trpo.git",
+        "commit": "e200eb8a23b3c7941a0091efb9750dafa4b23cbb"
+    },
+    "email": "hossein.abdi@manchester.ac.uk",
+    "root": "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo",
+    "host": "E-LOSXHMW74.local",
+    "username": "x47085ha",
+    "executable": "/opt/anaconda3/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 369.99177169799805
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M3 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 18.0
+    }
+}

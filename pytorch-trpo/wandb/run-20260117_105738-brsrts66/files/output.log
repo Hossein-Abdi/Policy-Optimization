@@ -1,0 +1,47 @@
+/opt/anaconda3/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:97: UserWarning: [33mWARN: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  logger.warn(
+/opt/anaconda3/lib/python3.11/site-packages/gym/core.py:200: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed)` instead.
+  deprecation(
+/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py:74: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:281.)
+  states = torch.Tensor(batch.state)
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(1.7586), 'grad_norm:', tensor(0.3603))
+fval before -3.334003076952422e-17
+a/e/r 0.0313675093929831 0.03517161608146211 0.8918415724865131
+fval after -0.031367509392983134
+Episode 1	Last reward: -100.87727558233854	Average reward -100.91
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.8698), 'grad_norm:', tensor(0.1809))
+fval before 5.078798020557523e-17
+a/e/r 0.01581923869481324 0.01739588079167559 0.9093669291171037
+fval after -0.01581923869481319
+Episode 2	Last reward: -83.88229632209377	Average reward -84.01
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.2176), 'grad_norm:', tensor(0.0565))
+fval before -6.69691551140528e-18
+a/e/r 0.00451361068698852 0.004352683969472542 1.0369718359165596
+fval after -0.004513610686988527
+Episode 3	Last reward: -65.34830286291468	Average reward -55.76
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 176, in <module>
+    action = select_action(state)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 66, in select_action
+    action_mean, _, action_std = policy_net(Variable(state))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/models.py", line 34, in forward
+    action_log_std = self.action_log_std.expand_as(action_mean)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

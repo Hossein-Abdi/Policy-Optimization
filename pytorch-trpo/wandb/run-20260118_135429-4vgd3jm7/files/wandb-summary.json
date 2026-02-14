@@ -1,0 +1,1 @@
+{"charts/episodic_return": -96.6761474609375, "charts/episodic_length": 999, "_timestamp": 1768744478.4646971, "_runtime": 8.56373119354248, "_step": 2997, "_wandb": {"runtime": 7}, "advantage": -0.7943265574830946, "return": -4.227327110119152, "value": -0.0038674115245925867, "v_loss": 0.5062529544414842, "pg_loss": -0.023548242542995333}

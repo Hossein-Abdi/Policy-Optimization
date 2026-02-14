@@ -1,0 +1,68 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            gqco33k3xvy30k65kbbcwstydk3guvuu:
+                apple:
+                    ecpuCores: 6
+                    gpuCores: 18
+                    memoryGb: 18
+                    name: Apple M3 Pro
+                    pcpuCores: 6
+                    ramTotalBytes: "19327352832"
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 12
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "393021317120"
+                email: hossein.abdi@manchester.ac.uk
+                executable: /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/bin/python
+                git:
+                    commit: e200eb8a23b3c7941a0091efb9750dafa4b23cbb
+                    remote: https://github.com/ikostrikov/pytorch-trpo.git
+                host: Mac.home
+                memory:
+                    total: "19327352832"
+                os: macOS-26.2-arm64-arm-64bit
+                program: /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main.py
+                python: CPython 3.10.0
+                root: /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo
+                startedAt: "2026-01-12T23:01:10.405730Z"
+                writerId: gqco33k3xvy30k65kbbcwstydk3guvuu
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 16
+            "4": 3.10.0
+            "5": 0.23.1
+            "12": 0.23.1
+            "13": darwin-arm64
+batch_size:
+    value: 15000
+damping:
+    value: 0.1
+env_name:
+    value: MountainCarContinuous-v0
+gamma:
+    value: 0.995
+l2_reg:
+    value: 0.001
+log_interval:
+    value: 1
+max_kl:
+    value: 0.01
+render:
+    value: false
+seed:
+    value: 543
+tau:
+    value: 0.97

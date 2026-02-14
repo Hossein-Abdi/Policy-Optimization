@@ -1,0 +1,134 @@
+/opt/anaconda3/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:97: UserWarning: [33mWARN: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  logger.warn(
+/opt/anaconda3/lib/python3.11/site-packages/gym/core.py:200: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed)` instead.
+  deprecation(
+/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py:78: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:281.)
+  states = torch.Tensor(batch.state)
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(1.7276), 'grad_norm:', tensor(0.3536))
+fval before 2.139689085830799e-16
+a/e/r 0.03172225646040535 0.03455140726205041 0.9181176390244324
+fval after -0.031722256460405135
+Episode 1	Last reward: -96.67616965953545	Average reward -100.33
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.7390), 'grad_norm:', tensor(0.1560))
+fval before -3.55626994874925e-17
+a/e/r 0.013613279809135969 0.014780151108909385 0.9210514634677833
+fval after -0.013613279809136005
+Episode 2	Last reward: -76.7199002717199	Average reward -80.83
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.3443), 'grad_norm:', tensor(0.1103))
+fval before -1.9389810570918226e-17
+a/e/r 0.006439302869071092 0.006886218913068916 0.9350999366067712
+fval after -0.006439302869071111
+Episode 3	Last reward: -69.87311423867912	Average reward 0.92
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.6458), 'grad_norm:', tensor(0.1879))
+fval before -6.943825598224149e-18
+a/e/r 0.011089591361369906 0.012915170211881719 0.8586484869682698
+fval after -0.011089591361369912
+Episode 4	Last reward: 30.80045704563213	Average reward 50.99
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.8966), 'grad_norm:', tensor(0.2821))
+fval before 3.4880570122322924e-17
+a/e/r 0.016977505043850493 0.017932356887478948 0.9467525741529732
+fval after -0.01697750504385046
+Episode 5	Last reward: 75.34869924339202	Average reward 63.99
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.6325), 'grad_norm:', tensor(0.2084))
+fval before 3.4440352336497747e-18
+a/e/r 0.013918491297402896 0.01265048095485004 1.100234160825855
+fval after -0.013918491297402892
+Episode 6	Last reward: 73.5919261264213	Average reward 79.82
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(1.2245), 'grad_norm:', tensor(0.3998))
+fval before -1.4130111222501993e-18
+a/e/r 0.023825891062024398 0.024489458790363832 0.9729039447535469
+fval after -0.023825891062024398
+Episode 7	Last reward: 80.58081656198405	Average reward 81.09
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.6949), 'grad_norm:', tensor(0.2227))
+fval before -8.497378958406665e-18
+a/e/r 0.013972407566442037 0.013897869722681075 1.005363256761525
+fval after -0.013972407566442045
+Episode 8	Last reward: 81.47926402200557	Average reward 82.58
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.5775), 'grad_norm:', tensor(0.1915))
+fval before -3.8774501269309697e-17
+a/e/r 0.011306708382096749 0.011549715776065242 0.9789598810325633
+fval after -0.011306708382096787
+Episode 9	Last reward: 84.46571839019904	Average reward 84.03
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.7363), 'grad_norm:', tensor(0.1812))
+fval before 4.1620357061861536e-18
+a/e/r 0.014738289698233683 0.014725148364906787 1.0008924414886178
+fval after -0.014738289698233679
+Episode 10	Last reward: 87.89038637275158	Average reward 84.56
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.8581), 'grad_norm:', tensor(0.2698))
+fval before 2.949819137311608e-17
+a/e/r 0.017983395322259114 0.017162869688343067 1.0478081841099884
+fval after -0.017983395322259083
+Episode 11	Last reward: 88.55396640295663	Average reward 85.40
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+('lagrange multiplier:', tensor(0.7042), 'grad_norm:', tensor(0.2425))
+fval before -1.2688263138573217e-17
+a/e/r 0.013395606870279212 0.01408516347827852 0.9510437625333416
+fval after -0.013395606870279225
+Episode 12	Last reward: 89.9543396936033	Average reward 87.41
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 206, in <module>
+    update_params(batch)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 163, in update_params
+    trpo_step(policy_net, get_loss, get_kl, args.max_kl, args.damping)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/trpo.py", line 69, in trpo_step
+    stepdir = conjugate_gradients(Fvp, -loss_grad, 10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/trpo.py", line 14, in conjugate_gradients
+    _Avp = Avp(p)
+           ^^^^^^
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/trpo.py", line 60, in Fvp
+    grads = torch.autograd.grad(kl, model.parameters(), create_graph=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/autograd/__init__.py", line 436, in grad
+    result = _engine_run_backward(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/autograd/graph.py", line 768, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+('lagrange multiplier:', tensor(0.8199), 'grad_norm:', tensor(0.2954))
+fval before 1.5778765754373427e-17
+a/e/r 0.01605897681152025 0.01639882603669133 0.9792760027814986
+fval after -0.016058976811520232
+Episode 13	Last reward: 84.08070037311273	Average reward 87.96
+1 =  torch.Size([])
+2 =  torch.Size([])
+3 =  torch.Size([])

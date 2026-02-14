@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 188, in <module>
+    action = select_action(state)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 76, in select_action
+    state = torch.from_numpy(state).unsqueeze(0)
+TypeError: expected np.ndarray (got tuple)
+Traceback (most recent call last):
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 188, in <module>
+    action = select_action(state)
+  File "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/pytorch-trpo/main_trpo.py", line 76, in select_action
+    state = torch.from_numpy(state).unsqueeze(0)
+TypeError: expected np.ndarray (got tuple)
