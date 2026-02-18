@@ -38,7 +38,7 @@ parser.add_argument('--seed', type=int, default=42, metavar='N',
                     help='random seed (default: 1)')    # Original default = 543
 parser.add_argument('--batch-size', type=int, default=2048, metavar='N',
                     help='random seed (default: 1)')    # Original default = 15000
-parser.add_argument('--total-timesteps', type=int, default=1000000,
+parser.add_argument('--total-timesteps', type=int, default=5000000,
                     help='total timesteps of the experiments')
 parser.add_argument('--render', action='store_true',
                     help='render the environment')
@@ -47,7 +47,7 @@ parser.add_argument('--log-interval', type=int, default=1, metavar='N',
 args = parser.parse_args()
 
 wandb.init(
-    project=f'{args.env_name}', # project name 
+    project=f'{args.env_name}-5M', # project name 
     entity="hossein_abdi-the-university-of-manchester",
     name="TRPO",
     config=args                   # command line arguments
