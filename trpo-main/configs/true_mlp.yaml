@@ -1,0 +1,48 @@
+algo: 'true'
+
+algo_config:
+  ent_coef: 0.00
+  optimizer: sgd
+  sgd_momentum: 0.0
+  weight_decay: 0.0
+  lr_pi: 0.5
+  lr_v: 0.001
+  pi_epochs: 1
+  pi_minibatches: 1
+  v_epochs: 4
+  v_minibatches: 8
+  with_popart: True
+  adv_type: gae
+  clamp_ratio: True
+  max_ratio: 10.0
+  min_ratio: 0.1
+  sigma_type: 'vector' # mu_shared, separate, linear
+  cg_steps: 10
+  cg_damping: 0.1
+  cg_shifted: False
+  cg_centered: False
+  cg_precondition: False
+  sample_size: null
+  max_grad_norm: 0.5
+  grad_clip: 'fisher' # l2, fisher
+
+env_config: 
+  env_name: mountaincar_continuous
+  num_envs: 5
+  nsteps: 2048
+  timesteps_per_proc: 5_000_000
+  norm_ret: False
+
+nets_config:
+  norm_obs: True
+  type: mlp
+  a_dropout: 0.0
+  a_hidden_size: 64
+  a_num_layers: 2
+  c_hidden_size: 64
+  c_num_layers: 2
+  c_dropout: 0.0
+
+log_config: 
+  log_interval: 10
+  n_eval_trials: 20
