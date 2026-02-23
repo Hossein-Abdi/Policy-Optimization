@@ -1,0 +1,1 @@
+{"Performance/return":0.6755911707878113,"Performance/value":0.6755558252334595,"Loss/v_loss":4.123921115706253e-08,"_timestamp":1.771860784354709e+09,"Loss/loss":-0.00012035817053401843,"Performance/advantage":0.6864179372787476,"_step":5867520,"Loss/pg_loss":-0.00012035817053401843,"_wandb":{"runtime":227},"_runtime":227.932665917,"Loss/entropy_loss":-3.48423433303833}

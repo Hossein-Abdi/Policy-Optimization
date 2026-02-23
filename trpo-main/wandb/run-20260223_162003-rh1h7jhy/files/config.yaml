@@ -1,0 +1,53 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            srzjvwl8va8430gmwroxynqkaeqrzea9:
+                apple:
+                    ecpuCores: 6
+                    gpuCores: 18
+                    memoryGb: 18
+                    name: Apple M3 Pro
+                    pcpuCores: 6
+                    ramTotalBytes: "19327352832"
+                    swapTotalBytes: "5368709120"
+                args:
+                    - --config
+                    - true_mlp.yaml
+                codePath: trpo-main/train_npg.py
+                codePathLocal: train_npg.py
+                cpu_count: 12
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "392382799872"
+                email: hossein.abdi@manchester.ac.uk
+                executable: /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/bin/python
+                git:
+                    commit: 11cf8b11086406284898e1a68075194c9bd246e3
+                host: E-LOSXHMW74.local
+                memory:
+                    total: "19327352832"
+                os: macOS-26.3-arm64-arm-64bit
+                program: /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/trpo-main/train_npg.py
+                python: CPython 3.10.0
+                root: /Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/trpo-main
+                startedAt: "2026-02-23T16:20:03.347316Z"
+                writerId: srzjvwl8va8430gmwroxynqkaeqrzea9
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 13
+                - 61
+            "4": 3.10.0
+            "5": 0.23.1
+            "12": 0.23.1
+            "13": darwin-arm64

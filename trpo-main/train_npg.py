@@ -31,7 +31,7 @@ from utils.utils import build_cnn, build_resnet, build_mlp
 from utils.utils import ActorCritic, count_vars, safemean, set_grads_from_flat, set_seed
 from vec_env import ( VecExtractDictObs, VecMonitor, VecNormalize)
 
-def learn(world_size, algo, actor_critic, writer, venv, device,
+def learn(rank, world_size, algo, actor_critic, writer, venv, device,
           total_timesteps, nsteps, algo_config, log_config, log_dir=None):
 
     gamma = .999
@@ -40,7 +40,8 @@ def learn(world_size, algo, actor_critic, writer, venv, device,
     per_epoch_timesteps = nsteps * venv.num_envs
     # epochs = total_timesteps // (per_epoch_timesteps * world_size) + 1
     # epochs = total_timesteps // per_epoch_timesteps + 1
-    epochs = 1001
+    # epochs = 1001
+    epochs = total_timesteps // (per_epoch_timesteps * world_size) + 1
 
     pi_minibatch_size = per_epoch_timesteps // algo_config.pi_minibatches
     v_minibatch_size = per_epoch_timesteps // algo_config.v_minibatches
@@ -452,6 +453,15 @@ def learn(world_size, algo, actor_critic, writer, venv, device,
         actor_critic.eval() # set to eval mode for PPO
         obs, ret, act, adv, outputs_old, epinfos = runner.run() #pylint: disable=E0632
 
+        if rank==0:
+            global_step = (epoch + 1) * per_epoch_timesteps * world_size
+            for info in epinfos:
+                if 'r' in info:
+                    wandb.log({
+                        "Episodic/episodic_return": info['r'],
+                        "Episodic/episodic_length": info['l']
+                    }, step=global_step)
+
         epinfobuf.extend(epinfos)
         tepochs.set_description('Minibatch training...')
 
@@ -510,6 +520,19 @@ def learn(world_size, algo, actor_critic, writer, venv, device,
         tnow = time.perf_counter()
         # Calculate the fps (frame per second)
         fps = int(per_epoch_timesteps / (tnow - tstart))
+
+
+        if rank==0:
+            wandb.log({
+                "Loss/loss": mb_loss.item(),         # Total policy loss (pi_loss - ent * entropy)
+                "Loss/pg_loss": mb_loss_pi.item(),   # Pure policy gradient/surrogate loss
+                "Loss/v_loss": mb_loss_v.item(),     # Value function MSE
+                "Loss/entropy_loss": pi_info['ent'], # Entropy component
+                "Performance/advantage": adv.mean(), # Mean of the advantage buffer
+                "Performance/return": ret.mean(),    # Mean of the returns buffer
+                "Performance/value": _vals.mean(),   # Mean of the value estimates from last minibatch
+            }, step=global_step)
+
 
         if logger.get_dir() is not None and (epoch+1) % log_config.log_interval == 0:
             # Calculates if value function is a good predicator of the returns (ev > 1)
@@ -583,6 +606,7 @@ def learn(world_size, algo, actor_critic, writer, venv, device,
             writer.add_scalar("misc/serial_timesteps", (epoch+1)*per_epoch_timesteps, epoch)
             writer.add_scalar("misc/nupdates", epoch)
             writer.add_scalar("misc/total_timesteps", (epoch+1)*per_epoch_timesteps*world_size, epoch)
+
 
     if log_dir is not None:
         # save checkpoints
@@ -732,14 +756,15 @@ def train_fn(rank, world_size, algo, seed, algo_config, env_config, nets_config,
 
         yaml.dump(config, open( f"{log_dir}/config.yaml", 'w' ))
 
-    wandb.init(
-    project=f'{tag_name[env_name]}-5M', # project name 
-    entity="hossein_abdi-the-university-of-manchester",
-    name="TRPO",
-    # config=args                   # command line arguments
-    )
+    if rank==0:
+        wandb.init(
+        project=f'{tag_name[env_name]}-5M', # project name 
+        entity="hossein_abdi-the-university-of-manchester",
+        name="TRPO",
+        # config=args                   # command line arguments
+        )
 
-    learn(world_size, algo, actor_critic, writer, venv, device,
+    learn(rank, world_size, algo, actor_critic, writer, venv, device,
           total_timesteps=timesteps_per_proc, nsteps=env_config.nsteps, 
           algo_config=algo_config, log_config=log_config, log_dir=log_dir)
 

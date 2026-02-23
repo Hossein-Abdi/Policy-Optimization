@@ -1,0 +1,40 @@
+{
+  "os": "macOS-26.3-arm64-arm-64bit",
+  "python": "CPython 3.10.0",
+  "startedAt": "2026-02-23T16:08:06.829694Z",
+  "args": [
+    "--config",
+    "true_mlp.yaml"
+  ],
+  "program": "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/trpo-main/train_npg.py",
+  "codePath": "trpo-main/train_npg.py",
+  "codePathLocal": "train_npg.py",
+  "git": {
+    "commit": "11cf8b11086406284898e1a68075194c9bd246e3"
+  },
+  "email": "hossein.abdi@manchester.ac.uk",
+  "root": "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/trpo-main",
+  "host": "E-LOSXHMW74.local",
+  "executable": "/Users/user/Documents/Professional/Manchester/Academic/Research/14.Policy-Optimization/env-clrl/bin/python",
+  "cpu_count": 12,
+  "cpu_count_logical": 12,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "392429801472"
+    }
+  },
+  "memory": {
+    "total": "19327352832"
+  },
+  "apple": {
+    "name": "Apple M3 Pro",
+    "ecpuCores": 6,
+    "pcpuCores": 6,
+    "gpuCores": 18,
+    "memoryGb": 18,
+    "swapTotalBytes": "5368709120",
+    "ramTotalBytes": "19327352832"
+  },
+  "writerId": "xk67r966j2k3tu2adq8v6vxuffspaqrn"
+}
