@@ -732,6 +732,13 @@ def train_fn(rank, world_size, algo, seed, algo_config, env_config, nets_config,
 
         yaml.dump(config, open( f"{log_dir}/config.yaml", 'w' ))
 
+    wandb.init(
+    project=f'{env_name}-5M', # project name 
+    entity="hossein_abdi-the-university-of-manchester",
+    name="TRPO",
+    # config=args                   # command line arguments
+    )
+
     learn(world_size, algo, actor_critic, writer, venv, device,
           total_timesteps=timesteps_per_proc, nsteps=env_config.nsteps, 
           algo_config=algo_config, log_config=log_config, log_dir=log_dir)
@@ -823,13 +830,6 @@ def main():
 
     if args.num_envs is not None:
         env_config.num_envs = args.num_envs
-
-    wandb.init(
-    project=f'{args.env_name}-5M', # project name 
-    entity="hossein_abdi-the-university-of-manchester",
-    name="TRPO",
-    config=args                   # command line arguments
-    )
 
     if args.n_proc > 1:
         # multiple nodes
