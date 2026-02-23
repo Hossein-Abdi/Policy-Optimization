@@ -1,0 +1,112 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            r214wtzp4xi3c5p9hi6mnokbt04im8fo:
+                args:
+                    - --config
+                    - true_mlp.yaml
+                codePath: trpo-main/train_npg.py
+                codePathLocal: train_npg.py
+                cpu_count: 10
+                cpu_count_logical: 20
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "980122034176"
+                        used: "793325563904"
+                email: hossein.abdi@manchester.ac.uk
+                executable: /home/hossein/venv/koala/bin/python
+                git:
+                    commit: 82e3a92a8468d41da832767f1a62cfa3d826e3ba
+                    remote: https://github.com/Hossein-Abdi/Policy-Optimization.git
+                gpu: NVIDIA GeForce RTX 4090
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-ea129e85-58cc-041a-6473-523f9d84202b
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-09bd3c74-2b24-3672-d27a-2e995241e00c
+                host: mingfei-workstation-76
+                memory:
+                    total: "66908221440"
+                os: Linux-6.17.0-14-generic-x86_64-with-glibc2.39
+                program: /home/hossein/code/Policy-Optimization/trpo-main/train_npg.py
+                python: CPython 3.12.3
+                root: /home/hossein/code/Policy-Optimization/trpo-main
+                startedAt: "2026-02-23T12:54:13.071843Z"
+                writerId: r214wtzp4xi3c5p9hi6mnokbt04im8fo
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 41
+            "2":
+                - 1
+                - 2
+                - 3
+                - 41
+            "3":
+                - 13
+                - 16
+            "4": 3.12.3
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+a_dropout:
+    value: null
+a_hidden_size:
+    value: null
+a_num_layers:
+    value: null
+c_dropout:
+    value: null
+c_hidden_size:
+    value: null
+c_num_layers:
+    value: null
+cg_centered:
+    value: null
+cg_damping:
+    value: null
+cg_prec:
+    value: null
+cg_shifted:
+    value: null
+cg_steps:
+    value: null
+config:
+    value: true_mlp.yaml
+device:
+    value: -1
+env_name:
+    value: null
+lr_pi:
+    value: null
+n_proc:
+    value: 1
+num_envs:
+    value: null
+optimizer:
+    value: null
+pi_epochs:
+    value: null
+pi_minibatches:
+    value: null
+port_num:
+    value: 29500
+seed:
+    value: null
+sigma_type:
+    value: null
+timesteps_per_proc:
+    value: null

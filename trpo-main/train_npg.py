@@ -13,6 +13,9 @@ from datetime import datetime
 from collections import deque
 import utils.logger as logger
 
+import wandb
+wandb.login()
+
 from torch.nn import functional as F
 from torch.func import vmap, grad, functional_call
 
@@ -766,6 +769,7 @@ def main():
     with open(f'configs/{args.config}') as fin:
         config = yaml.safe_load(fin)
 
+
     algo = config['algo']
     algo_config = types.SimpleNamespace(**config['algo_config'])
     env_config = types.SimpleNamespace(**config['env_config'])
@@ -820,6 +824,13 @@ def main():
     if args.num_envs is not None:
         env_config.num_envs = args.num_envs
 
+    wandb.init(
+    project=f'{args.env_name}-5M', # project name 
+    entity="hossein_abdi-the-university-of-manchester",
+    name="TRPO",
+    config=args                   # command line arguments
+    )
+
     if args.n_proc > 1:
         # multiple nodes
         os.environ["MASTER_ADDR"] = "localhost"
@@ -831,6 +842,8 @@ def main():
 
     else:
         train_fn(0, args.n_proc, algo, args.seed, algo_config, env_config, nets_config, log_config, args.device)
+
+
 
 if __name__ == '__main__':
     main()
