@@ -758,7 +758,7 @@ def train_fn(rank, world_size, algo, seed, algo_config, env_config, nets_config,
 
     if rank==0:
         wandb.init(
-        project=f'{tag_name[env_name]}-5M', # project name 
+        project=f'{tag_name[env_name]} (1)', # project name 
         entity="hossein_abdi-the-university-of-manchester",
         name="TRPO",
         # config=args                   # command line arguments

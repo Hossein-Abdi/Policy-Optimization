@@ -153,7 +153,7 @@ if __name__ == "__main__":
         wandb.login()
 
         wandb.init(
-            project=f'{args.env_id}-5M', # project name 
+            project=f'{args.env_id} (1)', # project name 
             entity="hossein_abdi-the-university-of-manchester",
             name="PPO",
             sync_tensorboard=False,    # default: True

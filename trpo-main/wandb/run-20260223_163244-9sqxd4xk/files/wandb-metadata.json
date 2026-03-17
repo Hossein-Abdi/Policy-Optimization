@@ -1,0 +1,53 @@
+{
+  "os":  "Linux-6.17.0-14-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2026-02-23T16:32:44.813249Z",
+  "args":  [
+    "--config",
+    "true_mlp.yaml",
+    "--env_name",
+    "ant"
+  ],
+  "program":  "/home/hossein/code/Policy-Optimization/trpo-main/train_npg.py",
+  "codePath":  "trpo-main/train_npg.py",
+  "codePathLocal":  "train_npg.py",
+  "git":  {
+    "remote":  "https://github.com/Hossein-Abdi/Policy-Optimization.git",
+    "commit":  "eb7abf1f95ba9e2ac23c26043da2caa1f5687206"
+  },
+  "email":  "hossein.abdi@manchester.ac.uk",
+  "root":  "/home/hossein/code/Policy-Optimization/trpo-main",
+  "host":  "mingfei-workstation-76",
+  "executable":  "/home/hossein/venv/koala/bin/python",
+  "cpu_count":  10,
+  "cpu_count_logical":  20,
+  "gpu":  "NVIDIA GeForce RTX 4090",
+  "gpu_count":  2,
+  "disk":  {
+    "/":  {
+      "total":  "980122034176",
+      "used":  "793434288128"
+    }
+  },
+  "memory":  {
+    "total":  "66908221440"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada",
+      "uuid":  "GPU-ea129e85-58cc-041a-6473-523f9d84202b"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada",
+      "uuid":  "GPU-09bd3c74-2b24-3672-d27a-2e995241e00c"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "6ixcb2x80erpksn26ru18i7fziy6g767"
+}
