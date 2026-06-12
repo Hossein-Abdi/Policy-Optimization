@@ -1,2 +1,17 @@
 env-clrl/
 pytorch-procgen/
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Weights & Biases logs
+trpo-main/wandb/
+cleanrl/cleanrl/results/
+trpo-main/results/
+
+# specific W&B file
+trpo-main/wandb/latest-run
+
+# safety for any future runs
+**/wandb/run-*/

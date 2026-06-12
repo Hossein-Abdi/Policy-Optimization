@@ -1,37 +1,34 @@
-algo: kfac
+algo: ppo
 
 algo_config:
   ent_coef: 0.00
   norm_obj: adv # options: adv, obj
-  optimizer: kfac
-  weight_decay: 0.0
-  lr_pi: 0.5
-  lr_v: 0.001
+  optimizer: adam
   g_momentum: 0.0
   c_momentum: 0.0
-  pi_epochs: 1
-  pi_minibatches: 1
+  lr_pi: 0.0003
+  lr_v: 0.0003
+  weight_decay: 0.0
+  weight_decay_type: 'null'
+  pi_epochs: 4
+  pi_minibatches: 8
   v_epochs: 4
   v_minibatches: 8
   with_popart: True
   adv_type: gae
-  clamp_ratio: True
-  max_ratio: 10.0
-  min_ratio: 0.1
+  cliprange: 0.2
   sigma_type: 'vector' # mu_shared, separate, linear
-  cg_damping: 0.1
+  cg_damping: 0.0
   cg_steps: 0
+  kl_damping: False
   cg_centered: False
+  adam_mask: True
   H_samples: null
   grad: 'npg' # 'npg'
-  grad_clip: null
-  post_grad: 'none' # 'l2_clip', 'norm', 'fisher_clip'
+  grad_clip: l2 # l2, fisher, empirical
   max_grad_norm: 0.5
   cache_len: 0
   critic_cache: False
-  cg_shifted: False
-  cg_centered: False
-  cg_precondition: False
 
 env_config: 
   # env_name: mountaincar

@@ -28,8 +28,8 @@ algo_config:
 
 env_config: 
   env_name: mountaincar_continuous
-  num_envs: 5
-  nsteps: 2048
+  num_envs: 16 #5
+  nsteps: 256 #2048
   timesteps_per_proc: 5_000_000
   norm_ret: False
 

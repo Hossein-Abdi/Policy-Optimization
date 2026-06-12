@@ -12,6 +12,7 @@ from tqdm import trange
 from datetime import datetime
 from collections import deque
 import utils.logger as logger
+import pandas as pd
 
 import wandb
 wandb.login()
@@ -32,7 +33,7 @@ from utils.utils import ActorCritic, count_vars, safemean, set_grads_from_flat, 
 from vec_env import ( VecExtractDictObs, VecMonitor, VecNormalize)
 
 def learn(rank, world_size, algo, actor_critic, writer, venv, device,
-          total_timesteps, nsteps, algo_config, log_config, log_dir=None):
+          total_timesteps, nsteps, algo_config, log_config, seed, env_id, log_dir=None):
 
     gamma = .999
     lam = .95
@@ -371,6 +372,7 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
         if actor_critic.is_discrete:
             _logp_full = F.log_softmax(_outputs, dim=-1)
             _logp_full_old = F.log_softmax(_outputs_old, dim=-1)
+            _logp = torch.gather(_logp_full, dim=-1, index=_act.unsqueeze(-1)).squeeze(1)
             _llr = torch.gather(_logp_full - _logp_full_old, dim=-1, index=_act.unsqueeze(-1)).squeeze(1)
             _ratio = torch.exp(_llr)
             _p_log_p = torch.exp(_logp_full) * _logp_full
@@ -423,7 +425,7 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
             approx_kl = _kl.item()
             ent = _entropy.item()
             pi_info = dict(kl=approx_kl, ent=ent, curr_lr=pi_optimizer.param_groups[0]['lr'], cf=clipfrac,
-                           grad_norm=grad_norm.item(), ratio_max=_ratio.max().item(), ratio_min=_ratio.min().item())
+                           grad_norm=grad_norm, ratio_max=_ratio.max().item(), ratio_min=_ratio.min().item())
 
         return _loss, _loss_pi, pi_info
 
@@ -441,9 +443,14 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
 
     tepochs = trange(epochs+1, desc='Epoch starts', leave=True)
 
-    # Main loop: collect experience in env and update/log each epoch
+    ## Main loop: collect experience in env and update/log each epoch ###############################################
     inds = np.arange(per_epoch_timesteps)
     compute_time = []
+
+    log_data = []
+    save_dir = f"results/{env_id}/{algo}"
+    os.makedirs(save_dir, exist_ok=True)
+    csv_path = f"{save_dir}/seed_{seed}.csv"
 
     for epoch in tepochs:
         tstart = time.perf_counter()
@@ -455,12 +462,15 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
 
         if rank==0:
             global_step = (epoch + 1) * per_epoch_timesteps * world_size
+            log_entry = {"global_step": global_step}
             for info in epinfos:
                 if 'r' in info:
                     wandb.log({
                         "Episodic/episodic_return": info['r'],
                         "Episodic/episodic_length": info['l']
                     }, step=global_step)
+                    log_entry["episodic_return"] = info["r"]
+                    log_entry["episodic_length"] = info["l"]
 
         epinfobuf.extend(epinfos)
         tepochs.set_description('Minibatch training...')
@@ -532,6 +542,18 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
                 "Performance/return": ret.mean(),    # Mean of the returns buffer
                 "Performance/value": _vals.mean(),   # Mean of the value estimates from last minibatch
             }, step=global_step)
+
+            log_entry["loss"] = mb_loss.item()
+            log_entry["pg_loss"] = mb_loss_pi.item()
+            log_entry["v_loss"] = mb_loss_v.item()
+            log_entry["entropy_loss"] = pi_info['ent']
+            log_entry["advantage"] = adv.mean().item()
+            log_entry["return"] = ret.mean().item()
+            log_entry["value"] = _vals.mean().item()
+
+            log_data.append(log_entry)
+            df = pd.DataFrame(log_data)
+            df.to_csv(csv_path, index=False)
 
 
         if logger.get_dir() is not None and (epoch+1) % log_config.log_interval == 0:
@@ -758,15 +780,15 @@ def train_fn(rank, world_size, algo, seed, algo_config, env_config, nets_config,
 
     if rank==0:
         wandb.init(
-        project=f'{tag_name[env_name]}-5M', # project name 
+        project=f'{tag_name[env_name]} (2)', # project name 
         entity="hossein_abdi-the-university-of-manchester",
-        name="TRPO",
+        name=f'{algo} seed:{seed}',
         # config=args                   # command line arguments
         )
 
     learn(rank, world_size, algo, actor_critic, writer, venv, device,
           total_timesteps=timesteps_per_proc, nsteps=env_config.nsteps, 
-          algo_config=algo_config, log_config=log_config, log_dir=log_dir)
+          algo_config=algo_config, log_config=log_config, seed=seed, env_id = tag_name[env_name], log_dir=log_dir)
 
 def main():
     parser = argparse.ArgumentParser(description='Process procgen training arguments.')

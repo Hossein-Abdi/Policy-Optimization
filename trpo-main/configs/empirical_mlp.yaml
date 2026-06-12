@@ -19,6 +19,11 @@ algo_config:
   sigma_type: 'vector' # mu_shared, separate, linear
   cg_steps: 10
   cg_damping: 0.1
+  grad_clip: fisher
+  cg_shifted: False
+  cg_centered: False
+  cg_precondition: False
+  max_grad_norm: 0.5
 
 env_config: 
   env_name: hopper
@@ -31,9 +36,9 @@ nets_config:
   norm_obs: True
   type: mlp
   a_dropout: 0.0
-  a_hidden_size: 256
+  a_hidden_size: 64
   a_num_layers: 2
-  c_hidden_size: 256
+  c_hidden_size: 64
   c_num_layers: 2
   c_dropout: 0.0
 
