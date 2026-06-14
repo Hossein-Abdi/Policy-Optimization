@@ -215,7 +215,7 @@ if __name__ == "__main__":
 
         for step in range(0, args.num_steps):
             global_step += args.num_envs
-            log_entry = {"global_step": global_step}
+            # log_entry = {"global_step": global_step}
             obs[step] = next_obs
             dones[step] = next_done
 
@@ -233,17 +233,29 @@ if __name__ == "__main__":
             next_obs, next_done = torch.Tensor(next_obs).to(device), torch.Tensor(next_done).to(device)
 
             if "final_info" in infos:
+                return_envs = []
+                length_envs = []
                 for info in infos["final_info"]:
                     if info and "episode" in info:
                         print(f"global_step={global_step}, episodic_return={info['episode']['r']}")
                         writer.add_scalar("charts/episodic_return", info["episode"]["r"], global_step)
                         writer.add_scalar("charts/episodic_length", info["episode"]["l"], global_step)
-                        log_entry["episodic_return"] = info["episode"]["r"]
-                        log_entry["episodic_length"] = info["episode"]["l"]
                         wandb.log({
                             "Episodic/episodic_return": info["episode"]["r"],
                             "Episodic/episodic_length": info["episode"]["l"]
                         }, step=global_step)
+                        return_envs.append(float(info["episode"]["r"]))
+                        length_envs.append(int(info["episode"]["l"]))
+
+                if return_envs:
+                    episode_entry = {
+                        "global_step": global_step,
+                        "episodic_return": np.mean(return_envs),
+                        "episodic_length": np.mean(length_envs)
+                    }
+                    log_data.append(episode_entry)
+
+
 
         # bootstrap value if not done
         with torch.no_grad():
@@ -359,15 +371,19 @@ if __name__ == "__main__":
             "Performance/value": b_values.mean(),
         }, step=global_step)
 
-        log_entry["loss"] = loss.item()
-        log_entry["pg_loss"] = pg_loss.item()
-        log_entry["v_loss"] = v_loss.item()
-        log_entry["entropy_loss"] = entropy_loss.item()
-        log_entry["advantage"] = b_advantages.mean().item()
-        log_entry["return"] = b_returns.mean().item()
-        log_entry["value"] = b_values.mean().item()
 
-        log_data.append(log_entry)
+        loss_entry = {
+            "global_step": global_step,
+            "loss": loss.item(),
+            "pg_loss": pg_loss.item(),
+            "v_loss": v_loss.item(),
+            "entropy_loss": entropy_loss.item(),
+            "advantage": b_advantages.mean().item(),
+            "return": b_returns.mean().item(),
+            "value": b_values.mean().item()
+        }
+        log_data.append(loss_entry)
+
         df = pd.DataFrame(log_data)
         df.to_csv(csv_path, index=False)
 
