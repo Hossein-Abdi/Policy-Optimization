@@ -243,8 +243,8 @@ if __name__ == "__main__":
                             "Episodic/episodic_return": info["episode"]["r"],
                             "Episodic/episodic_length": info["episode"]["l"]
                         }, step=global_step)
-                        return_envs.append(float(info["episode"]["r"]))
-                        length_envs.append(int(info["episode"]["l"]))
+                        return_envs.append(info["episode"]["r"].item())
+                        length_envs.append(info["episode"]["l"].item())
 
                 if return_envs:
                     episode_entry = {
