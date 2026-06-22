@@ -294,6 +294,8 @@ if __name__ == "__main__":
                 logratio = newlogprob - b_logprobs[mb_inds]
                 ratio = logratio.exp()
 
+                start_time = time.time()
+
                 with torch.no_grad():
                     # calculate approx_kl http://joschu.net/blog/kl-approx.html
                     old_approx_kl = (-logratio).mean()
@@ -331,6 +333,9 @@ if __name__ == "__main__":
                 loss.backward()
                 nn.utils.clip_grad_norm_(agent.parameters(), args.max_grad_norm)
                 optimizer.step()
+
+                end_time = time.time()
+                print(f"**** Iteration Time = {(end_time - start_time)*1000:.2f}ms ******")
 
                 # wandb.log({
                 #     "loss": loss.item(),
