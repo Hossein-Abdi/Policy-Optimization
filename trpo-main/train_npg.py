@@ -13,7 +13,6 @@ from datetime import datetime
 from collections import deque
 import utils.logger as logger
 import pandas as pd
-import pandas as pd
 
 import wandb
 wandb.login()
@@ -219,6 +218,8 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
             _ratio = torch.clamp(_ratio, algo_config.min_ratio, algo_config.max_ratio)
         _loss_pi = (- _ratio * _adv).mean() 
 
+        start_time = time.time()
+
         kl_grad = torch.autograd.grad(2 * _ent_kl, params_pi, create_graph=True)
         kl_grad_flat = make_flat(kl_grad)
         def fisher_vector_product(x):
@@ -276,6 +277,9 @@ def learn(rank, world_size, algo, actor_critic, writer, venv, device,
         set_grads_from_flat(params_pi, step_dir)
 
         pi_optimizer.step()
+
+        end_time = time.time()
+        print(f"**** Iteration Time = {(end_time - start_time)*1000:.2f}ms ******")
 
         # Useful extra info
         with torch.no_grad():
