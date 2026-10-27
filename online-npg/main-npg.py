@@ -202,7 +202,7 @@ def parse_args():
     parser.add_argument('--do-importance-sampling', type=bool, default=False)
 
     ## Online NPG specific args **************************************************************************
-    parser.add_argument('--eta', type=float, default=1e-3, help='Online NPG learning rate eta_i')                   # default=1e-3
+    parser.add_argument('--eta', type=float, default=5e-4, help='Online NPG learning rate eta_i')                   # default=1e-3
     parser.add_argument('--beta', type=float, default=0.001, help='Fisher moving average weight beta_i in (0, 1]')   # default=0.1 (or 0.01 or 0.001)
     parser.add_argument('--init-fisher', type=float, default=0.01, help='Initial Fisher F_bar_0 = init_fisher * I')  # default=1.0
     return parser.parse_args()
@@ -305,7 +305,7 @@ def main():
 
 
     if args.exp == 'AUTO':
-        args.exp = f'{args.optim} eta:{args.eta} beta:{args.beta}'                ################################ Here is the Legend Explanation ################################
+        args.exp = f'{args.optim} eta:{args.eta} beta:{args.beta} F0:{args.init_fisher}'                ################################ Here is the Legend Explanation ################################
     
     wandb.init(
         project = f'{args.env_id} (2)', # project name 
