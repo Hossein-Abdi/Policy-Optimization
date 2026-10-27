@@ -305,7 +305,7 @@ def main():
 
 
     if args.exp == 'AUTO':
-        args.exp = f'{args.optim} seed:{args.seed}'                ################################ Here is the Legend Explanation ################################
+        args.exp = f'{args.optim} eta:{args.eta} beta:{args.beta}'                ################################ Here is the Legend Explanation ################################
     
     wandb.init(
         project = f'{args.env_id} (2)', # project name 
