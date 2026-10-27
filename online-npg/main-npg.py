@@ -202,8 +202,8 @@ def parse_args():
     parser.add_argument('--do-importance-sampling', type=bool, default=False)
 
     ## Online NPG specific args
-    parser.add_argument('--eta', type=float, default=1e-3, help='Online NPG learning rate eta_i')                   # default=1e-3
-    parser.add_argument('--beta', type=float, default=0.01, help='Fisher moving average weight beta_i in (0, 1]')   # default=0.1
+    parser.add_argument('--eta', type=float, default=1e-4, help='Online NPG learning rate eta_i')                   # default=1e-3
+    parser.add_argument('--beta', type=float, default=0.001, help='Fisher moving average weight beta_i in (0, 1]')   # default=0.1 (or 0.01)
     parser.add_argument('--init-fisher', type=float, default=1.0, help='Initial Fisher F_bar_0 = init_fisher * I')  # default=1.0
     return parser.parse_args()
 
