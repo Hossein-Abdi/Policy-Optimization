@@ -57,63 +57,81 @@ class OnlineNPG(torch.optim.Optimizer):
     solve for F_bar_i^{-1} g_hat_i.
     """
  
-    def __init__(self, policy, log_prob_fn, gamma, lr, beta, F0=None):
+    def __init__(self, params, lr, beta, gamma, init_fisher=1.0, fisher_dtype=torch.float64):
         """
-        policy      : torch.nn.Module; its trainable parameters (flattened) are theta.
-        log_prob_fn : callable (policy, states, actions) -> tensor of shape (N,)
-                      with entries log pi_theta(a_j | s_j).
-        gamma       : discount factor in [0, 1).
-        lr          : learning rate eta_i, a float or a callable i -> float.
-        beta        : Fisher moving-average weight beta_i in (0, 1],
-                      a float or a callable i -> float.
-        F0          : initial Fisher F_bar_0, a (d, d) tensor. Defaults to the identity.
+        params       : iterable of policy parameters; their flattened concatenation is theta.
+        lr           : learning rate eta_i, a float or a callable i -> float.
+        beta         : Fisher moving-average weight beta_i in (0, 1],
+                       a float or a callable i -> float.
+        gamma        : discount factor in [0, 1).
+        init_fisher  : initial Fisher F_bar_0, a scalar c (F_bar_0 = c * I) or a (d, d) tensor.
+        fisher_dtype : dtype used to store F_bar and perform the solve (numerical precision only).
         """
         if not 0.0 <= gamma < 1.0:
             raise ValueError("gamma must be in [0, 1).")
- 
-        self.policy = policy
-        self.log_prob_fn = log_prob_fn
+
+        params = [p for p in params if p.requires_grad]
+        super().__init__(params, dict(lr=lr, beta=beta, gamma=gamma))
+
         self.gamma = gamma
         self.lr = lr
         self.beta = beta
- 
-        self.params = [p for p in policy.parameters() if p.requires_grad]
+
+        self.params = params
         theta = parameters_to_vector(self.params)
         self.d = theta.numel()
         self.dtype, self.device = theta.dtype, theta.device
- 
-        if F0 is None:
-            F0 = torch.eye(self.d, dtype=self.dtype, device=self.device)
-        F0 = torch.as_tensor(F0, dtype=self.dtype, device=self.device)
+        # MPS has no float64 / linalg.solve -> keep Fisher on CPU there
+        self.fisher_device = torch.device("cpu") if self.device.type == "mps" else self.device
+        self.fisher_dtype = fisher_dtype
+
+        if torch.is_tensor(init_fisher):
+            F0 = init_fisher
+        else:
+            F0 = float(init_fisher) * torch.eye(self.d)
+        F0 = torch.as_tensor(F0, dtype=self.fisher_dtype, device=self.fisher_device)
         if F0.shape != (self.d, self.d):
             raise ValueError(f"F0 must have shape ({self.d}, {self.d}).")
         self.F_bar = F0.detach().clone()
- 
+
         self.i = 0  # iteration counter
- 
+
     @staticmethod
     def _schedule(value, i):
         return value(i) if callable(value) else value
- 
-    def _score_vectors(self, states, actions):
+
+    def _score_vectors(self, log_probs):
         """Rows are grad_theta log pi_{theta_{i-1}}(a_ij | s_ij), shape (N, d)."""
-        log_probs = self.log_prob_fn(self.policy, states, actions).reshape(-1)
+        log_probs = log_probs.reshape(-1)
         N = log_probs.shape[0]
-        scores = torch.empty(N, self.d, dtype=self.dtype, device=self.device)
-        for j in range(N):
-            grads = torch.autograd.grad(
-                log_probs[j], self.params,
-                retain_graph=(j < N - 1), allow_unused=True,
-            )
-            scores[j] = torch.cat([
-                (torch.zeros_like(p) if g is None else g).reshape(-1)
+        try:
+            # N backward passes (rows of the identity), vectorized
+            eye = torch.eye(N, dtype=log_probs.dtype, device=log_probs.device)
+            grads = torch.autograd.grad(log_probs, self.params, grad_outputs=eye,
+                                        is_grads_batched=True, allow_unused=True)
+            return torch.cat([
+                (torch.zeros(N, p.numel(), dtype=self.dtype, device=self.device) if g is None else g.reshape(N, -1))
                 for g, p in zip(grads, self.params)
-            ])
-        return scores
- 
-    def step(self, states, actions, advantages):
+            ], dim=1)
+        except RuntimeError:
+            # Same result, one autograd pass per transition
+            scores = torch.empty(N, self.d, dtype=self.dtype, device=self.device)
+            for j in range(N):
+                grads = torch.autograd.grad(
+                    log_probs[j], self.params,
+                    retain_graph=(j < N - 1), allow_unused=True,
+                )
+                scores[j] = torch.cat([
+                    (torch.zeros_like(p) if g is None else g).reshape(-1)
+                    for g, p in zip(grads, self.params)
+                ])
+            return scores
+
+    def update(self, advantages, log_probs):
         """
         Performs one Online NPG iteration i using the mini-batch of N transitions.
+        advantages : (N,) advantage estimates A_hat_ij.
+        log_probs  : (N,) log pi_{theta_{i-1}}(a_ij | s_ij), still attached to the graph.
         Returns theta_i as a flat tensor.
         """
         self.i += 1
@@ -121,27 +139,36 @@ class OnlineNPG(torch.optim.Optimizer):
         beta_i = self._schedule(self.beta, self.i)
         if not 0.0 < beta_i <= 1.0:
             raise ValueError("beta_i must be in (0, 1].")
- 
-        S = self._score_vectors(states, actions)  # (N, d)
+
+        S = self._score_vectors(log_probs).detach()  # (N, d)
         N = S.shape[0]
-        A_hat = torch.as_tensor(advantages, dtype=self.dtype, device=self.device).reshape(-1)
+        A_hat = torch.as_tensor(advantages, dtype=self.dtype, device=self.device).detach().reshape(-1)
         if A_hat.shape[0] != N:
             raise ValueError("Need one advantage estimate per transition.")
- 
+
+        S = S.to(device=self.fisher_device, dtype=self.fisher_dtype)
+        A_hat = A_hat.to(device=self.fisher_device, dtype=self.fisher_dtype)
+
         g_hat = S.T @ A_hat / (N * (1.0 - self.gamma))  # (12a)
-        F_hat = S.T @ S / N                             # (12b)
- 
-        self.F_bar = (1.0 - beta_i) * self.F_bar + beta_i * F_hat  # (13a)
- 
+        # (12b) F_hat = S^T S / N  and  (13a) F_bar = (1 - beta) F_bar + beta F_hat,
+        # fused in place to avoid allocating a second d x d matrix
+        self.F_bar.mul_(1.0 - beta_i).addmm_(S.T, S, alpha=beta_i / N)
+
         with torch.no_grad():
             theta = parameters_to_vector(self.params)
-            nat_grad = torch.linalg.solve(self.F_bar, g_hat)       # F_bar_i^{-1} g_hat_i
-            theta = theta + eta_i * nat_grad                       # (13b)
+            # F_bar_i^{-1} g_hat_i : exact solve (F_bar_i is SPD -> Cholesky; LU fallback)
+            L, info = torch.linalg.cholesky_ex(self.F_bar)
+            if info.item() == 0:
+                nat_grad = torch.cholesky_solve(g_hat.unsqueeze(1), L).squeeze(1)
+            else:
+                nat_grad = torch.linalg.solve(self.F_bar, g_hat)
+            theta = theta + eta_i * nat_grad.to(device=self.device, dtype=self.dtype)  # (13b)
             vector_to_parameters(theta, self.params)
- 
-        return theta.clone()
- 
 
+        return theta.clone()
+
+    def step(self, closure=None):
+        raise NotImplementedError("Use OnlineNPG.update(advantages, log_probs).")
 
 optimizers = {
     'online-npg': OnlineNPG,
@@ -194,6 +221,7 @@ def parse_args():
     parser.add_argument('--eta', type=float, default=5e-4, help='Online NPG learning rate eta_i')                   # default=1e-3
     parser.add_argument('--beta', type=float, default=0.001, help='Fisher moving average weight beta_i in (0, 1]')   # default=0.1 (or 0.01 or 0.001)
     parser.add_argument('--init-fisher', type=float, default=1.0, help='Initial Fisher F_bar_0 = init_fisher * I')  # default=1.0
+    parser.add_argument('--fisher-dtype', type=str, default='float64', choices=['float32', 'float64'], help='dtype of F_bar and the linear solve (numerical precision only)')
     return parser.parse_args()
 
 
@@ -345,6 +373,7 @@ def main():
     extra_params['beta'] = args.beta
     extra_params['gamma'] = args.gamma
     extra_params['init_fisher'] = args.init_fisher
+    extra_params['fisher_dtype'] = getattr(torch, args.fisher_dtype)
 
 
     ## Policy and Value Optimizer
