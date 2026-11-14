@@ -15,3 +15,11 @@ trpo-main/wandb/latest-run
 
 # safety for any future runs
 **/wandb/run-*/
+
+# Ignore generated files
+online-npg/nohup.out
+online-npg/results/
+online-npg/runs/
+online-npg/wandb/
+cleanrl/cleanrl/nohup.out
+trpo-main/nohup*.out
